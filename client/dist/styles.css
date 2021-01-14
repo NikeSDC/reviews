@@ -1,0 +1,18 @@
+
+element.style {
+  outline: none;
+  border-radius: 0px;
+  position: relative;
+  display: flex;
+}
+.keyboard-focus button, .keyboard-focus input[type=button], .keyboard-focus input[type=reset], .keyboard-focus input[type=submit] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.css-1y5ubft {
+  box-shadow: inset 0 1px 0 0 #E5E5E5;
+  padding: 28px 0px;
+  background: transparent;
+  width: 100%;
+}
