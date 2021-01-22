@@ -1,22 +1,24 @@
 import React from 'react';
+// import Accordion from 'react-bootstrap/Accordion';
+import Shipping from './Shipping.jsx';
+import Reviews from './Reviews.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      review: 3,
+    };
   }
 
   render() {
     return (
-      <div className = "shipments">
-        <div className="shipping">
-          Free Shipping and Returns &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i className = "arrow down"></i>
+      <div>
+        <div className="startingPage pt10-lg mt0-lg mr0-lg ml0-lg">
+          <Shipping />
+          <Reviews />
         </div>
-        <div className="shipping">
-          Reviews(41) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i className = "arrow down"></i>
-        </div>
-        <div className="shipping"></div>
       </div>
     );
   }

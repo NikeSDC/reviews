@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -18,8 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -40,67 +40,460 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+} */
+
+/*
+Start of styling */
+
+
+
+/*
+START OF STYLING FOR PARENT DIV
+*/
+
+@import url(//db.onlinewebfonts.com/c/0f176e527f217797a50cb82e9f62894f?family=TradeGothic);
+
+html {
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: none;
+}
+
+body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+html {
+  display: block;
+}
 
+article, aside, details, figcaption, figure, footer, header, hgroup, img, menu, nav, section {
+  display: block;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+a {
+  color: #111;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+div {
+  display: block;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    list-style: none;
+}
 
+.z3 {
+  z-index: 3;
+}
+.z4 {
+  z-index: 4;
+}
+::-webkit-input-placeholder { /* Edge */
+  color:#d1d1d1;
+}
+:-ms-input-placeholder { /* Internet Explorer */
+  color:#d1d1d1;
+}
+::placeholder {
+  color:#d1d1d1;
+}
+:after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
+/*
+END OF STYLING FOR PARENT DIV
+*/
+
+/*
+START OF STYLING FOR REVIEWS DIV
+*/
+
+.startingPage {
+  margin-top: 12px;
+  padding-top: 48px;
+  -webkit-box-shadow: inset 0 -1px 0 0 #e5e5e5;
+  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+  margin-right: 24px;
+  margin-left: 24px;
+  box-shadow: inset 0 -1px 0 0 #E5E5E5;
+  /* width: fit-content */
+}
+
+.css-bxtnul {
+  box-shadow: inset 0 -1px 0 0 #E5E5E5;
+}
+.border-bottom {
+  -webkit-box-shadow: inset 0 -1px 0 0 #e5e5e5;
+  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+}
+
+.ml6-sm {
+    margin-left: 24px;
+}
+
+.mr6-sm {
+    margin-right: 24px;
+}
+
+.mt3-sm {
+    margin-top: 12px;
+}
+
+div {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+END OF STYLING FOR REVIEWS DIV
+*/
+
+/*
+START OF STYLING FOR FREE SHIPPING DIV
+*/
 element.style {
-  object-fit: contain;
+  outline: none;
+  border-radius: 0px;
+  position: relative;
+  display: flex;
 }
 
-body {
+button {
+  appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+
+.keyboard-focus button, .keyboard-focus input[type=button], .keyboard-focus input[type=reset], .keyboard-focus input[type=submit] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.css-1y5ubft {
+  box-shadow: inset 0 1px 0 0 #E5E5E5;
+  padding: 28px 0px;
+  background: transparent;
+  width: 100%;
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
   font-size: inherit;
   line-height: inherit;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #111;
-  background-color: #fff;
-}
-.css-m5dkrx {
-  transition: none 0s ease 0s;
-  opacity: 1;
-  visibility: visible;
-  animation: 0s ease 0s 1 normal none running none;
+  border: none;
+  cursor: pointer;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
 }
 
-.css-viwop1 {
-  position: absolute;
-  inset: 0px;
-  opacity: 0;
-  visibility: visible;
-  transition: opacity 500ms ease 0s;
-}
+
+
 /*
-.arrow {
+END OF STYLING FOR FREE SHIPPING DIV
+*/
+
+
+/*
+START OF STYLING FOR FREE SHIPPING TEXT
+*/
+
+.css-nofngn {
+  color: #111111;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.css-15oagn2 {
+  min-width: 320px;
+}
+
+.css-aguiio {
+  min-width: 320px;
+}
+
+.css-17y0hnb {
+  padding: 0 4px;
+  text-align: left;
+}
+
+[class*=ncss-col-] {
+  position: relative;
+  min-height: 1px;
+  display: none;
+  font-size: 16px;
+  line-height: 1.75;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ncss-col-sm-10 {
+  width: 83.33333333333334%;
+  display: inline-block;
+}
+
+.ncss-col-sm-7 {
+  width: 58.333333333333336%;
+  display: inline-block;
+}
+
+.pb8-sm {
+  padding-bottom: 32px;
+}
+
+.pt12-sm {
+  padding-top: 48px;
+}
+
+.prl1-sm {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.pt2-sm {
+  padding-top: 8px;
+}
+
+.ncss-col-sm-12 {
+  width: 100%;
+  display: inline-block;
+}
+
+/*
+END OF STYLING FOR FREE SHIPPING TEXT
+*/
+/*
+
+
+START OF STYLING FOR ARROW
+*/
+.css-7eklhh {
   padding: 0 4px;
   text-align: right;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(-80%);
   transform: translateY(-80%);
   right: 0;
 }
 
-.arrow-umbrella {
+
+.css-10t76nn:before {
+  content: "";
+  display: inline;
+  position: absolute;
+  background: #111;
+  width: 9px;
+  height: 2px;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.86,0,0.07,1),-webkit-transform-origin 200ms cubic-bezier(0.86,0,0.07,1);
+  -webkit-transition: transform 250ms cubic-bezier(0.86,0,0.07,1),transform-origin 200ms cubic-bezier(0.86,0,0.07,1);
+  transition: transform 250ms cubic-bezier(0.86,0,0.07,1),transform-origin 200ms cubic-bezier(0.86,0,0.07,1);
+  -webkit-transform-origin: 100% 30%;
+  -ms-transform-origin: 100% 30%;
+  transform-origin: 100% 30%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 0;
+  -webkit-transform-origin: 100% 70%;
+  -ms-transform-origin: 100% 70%;
+  transform-origin: 100% 70%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.css-10t76nnt:after {
+  content: "";
+  display: inline;
+  position: absolute;
+  background: #111;
+  width: 9px;
+  height: 2px;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.86,0,0.07,1),-webkit-transform-origin 200ms cubic-bezier(0.86,0,0.07,1);
+  -webkit-transition: transform 250ms cubic-bezier(0.86,0,0.07,1),transform-origin 200ms cubic-bezier(0.86,0,0.07,1);
+  transition: transform 250ms cubic-bezier(0.86,0,0.07,1),transform-origin 200ms cubic-bezier(0.86,0,0.07,1);
+  -webkit-transform-origin: 0% 30%;
+  -ms-transform-origin: 0% 30%;
+  transform-origin: 0% 30%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 0;
+  -webkit-transform-origin: 0% 70%;
+  -ms-transform-origin: 0% 70%;
+  transform-origin: 0% 70%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.css-17y0hnb {
+  padding: 0 4px;
+  text-align: left;
+}
+
+.css-7eklhh {
+  padding: 0 4px;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(-80%);
+  transform: translateY(-80%);
+  right: 0;
+}
+/* This is the space between the arrows*/
+
+.ncss-col-sm-5 {
+  width: auto; /*changed from 16.666666%*/
+  display: inline-flex;
+}
+.ncss-col-sm-51 {
+  width: auto; /*changed from 16.666666%*/
   display: inline-block;
+}
+/* This is the space between the arrows*/
+.ncss-col-sm-2 {
+  width: 1.5%; /*changed from 16.666666%*/
+  display: inline-block;
+}
+.shoeImage {
+  max-width: 60px;
+  max-height: 60px;
+  display: block;
+}
+.shoePrice {
+  width: 100%;
+  max-width: calc(100% - 60px);
+  padding-right: 28px;
+  padding-left: 12px;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+
+/*
+END OF STYLING FOR ARROW
+*/
+
+/*
+STAR STYLING
+*/
+.mr1-sm {
+  margin-right: 4px;
+  padding-right: 1.3%;
+}
+
+.d-sm-ib {
+  display: inline-block;
+}
+
+[class*=g72] {
+  font-family: nike-glyphs;
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: top;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-color-primary-dark {
+  color: #111;
+}
+
+.body-1 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.css-1fpb7q0 {
+  font-size: 20px;
   position: relative;
-  width: 18px;
-  height: 8px;
-  top: 15px;
-  -webkit-transition: top 250ms cubic-bezier(0.86,0,0.07,1);
-  transition: top 250ms cubic-bezier(0.86,0,0.07,1);
-} */
-
-
-
-
-
-
-
-
-
+  top: 11px;
+  right: 8px;
+}
+/*
+END OF STAR STYLING
+*/
 
 body{
   padding:50px;
@@ -141,67 +534,182 @@ body{
 	transform: rotate(180deg);
 }
 
-/*
-This section is for the line for Free Shipping
 
+/*
+ACCORDION SECTION
 */
 
-
-element.style {
-  outline: none;
-  border-radius: 0px;
-  position: relative;
+.accordion__section {
   display: flex;
+  flex-direction: column;
 }
 
-.mouse-focus button, .mouse-focus input[type=button], .mouse-focus input[type=reset], .mouse-focus input[type=submit] {
-  outline: 0;
-}
-
-.shipping {
-  box-shadow: inset 0 1px 0 0 #E5E5E5;
-  padding: 28px 0px;
-  background: transparent;
-  width: 30%;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
   border: none;
-  color: #111111;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+  outline: none;
+  transition: background-color 0.6s ease;
 }
 
-:after, :before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover,
+.active {
+  background-color: #ccc;
 }
 
-.shipments {
-  min-width: 320px;
-  margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/* Style the accordion content title */
+.accordion__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+
+.accordion__section {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 1024px){
+.pt10-lg {
+    padding-top: 40px;
+}}
+
+@media only screen and (min-width: 1024px){
+.ml0-lg {
+    margin-left: 0;
+}}
+
+@media only screen and (min-width: 1024px){
+.mr0-lg {
+    margin-right: 0;
+}}
+
+@media only screen and (min-width: 1024px){
+.mt0-lg {
+    margin-top: 0;
+}}
+
+@media only screen and (min-width: 1024px){
+.d-lg-b {
     display: block;
+}}
+
+.reviewSummary{
+background: transparent;
+border: 0;
+padding: 55px 0 0;
+margin: 0 auto;
+max-width: 1000px;
 }
 
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+.reviewStars{
+position: relative;
+top: 23px;
+margin: 0 auto;
+display: block;
 }
 
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+.reviewRating{
+position: relative;
+top: 44px;
+font-family: "Nike TG", Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 28px;
+text-transform: uppercase;
+letter-spacing: 0.05rem;
+color: #111;
+font-weight: 500;
+display: inline-block;
+line-height: 1;
+margin: 0 5px;
 }
 
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+/*
+SLIDER SECTION
+*/
+
+.slider {
+  width: 100%;
 }
 
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #EBEBEB;
+  outline: #000;
+  margin-bottom: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  border-radius: 50%;
+}
+
+/*
+END OF SLIDER SECTION
+*/
+
+.sortBy {
+    appearance: none;
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 0;
+    width: 100%;
+    max-width: 100%;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%227%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%203.414L7.828.586%209.243%202%205%206.243.757%202%202.172.586z%22%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E);
+    background-size: 13px auto;
+    background-color: #FFF;
+    margin-left: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: none;
+    margin-top: 0;
+    overflow: visible
+}
