@@ -5,6 +5,7 @@ import { IoStarOutline } from 'react-icons/io5';
 import styled from 'styled-components';
 import ReviewInstance from './ReviewInstance.jsx'
 import ReviewsModal from './ReviewsModal.jsx'
+import AddReview from './AddReview.jsx'
 
 class Reviews extends React.Component {
   constructor(props) {
@@ -14,16 +15,33 @@ class Reviews extends React.Component {
       isClicked: false,
       review: 3,
       hovered: false,
-      modalClicked: false,
+      moreReviewsModalClicked: false,
+      addReviewsModalClicked: false,
     };
     this.toggleAccordion = this.toggleAccordion.bind(this);
     this.starRender = this.starRender.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.moreReviews = this.moreReviews.bind(this);
+    this.addReviews = this.addReviews.bind(this);
+  }
+  // triggers modal popup to let users view all reviews
+
+  moreReviews() {
+    this.setState({
+      moreReviewsModalClicked: !this.state.moreReviewsModalClicked
+    });
+  }
+  // triggers modal popup to let users add new reviews
+
+  addReviews() {
+    this.setState({
+      addReviewsModalClicked: !this.state.addReviewsModalClicked,
+    });
   }
 
-  handleClick() {
+  // this will add a setTimeout so that addReviews appears a second after displaying more reviews
+  addReviewsTimeout() {
     this.setState({
-      modalClicked: !this.state.modalClicked
+      addReviewsModalClicked: !this.state.addReviewsModalClicked
     });
   }
 
@@ -186,17 +204,18 @@ class Reviews extends React.Component {
             </StarRating>
               </div>
               <p className='pt2-sm d-lg-b'>
-                <WriteReviewButton onMouseEnter={() => { this.setState({ hovered: true }) }} onMouseLeave={() => { this.setState({ hovered: false }) }}>
+                <WriteReviewButton onMouseEnter={() => { this.setState({ hovered: true }) }} onMouseLeave={() => { this.setState({ hovered: false }) }} onClick={this.addReviews}>
                   Write a Review
               </WriteReviewButton>
               </p>
+              {this.state.addReviewsModalClicked ? <ReviewsModal addReviewRender={this.addReviews} moreReviewRender={this.moreReviews} state={this.state} /> : ''}
               <ReviewInstance />
-              <MoreReviews onClick={this.handleClick}>More Reviews</MoreReviews>
-              {this.state.modalClicked === true ? <ReviewsModal handleClick={this.handleClick} /> : ''}
+              <MoreReviews onClick={this.moreReviews} name="moreReviewsModalClicked">More Reviews</MoreReviews>
+              {this.state.moreReviewsModalClicked === true ? <ReviewsModal moreReviewRender={this.moreReviews} state={this.state} /> : ''}
             </ProductReview>
           </ReviewsContainer2>
         </ReviewsContainer1>
-      )
+      );
     }
 
     return (

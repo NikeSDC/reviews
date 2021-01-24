@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { AiOutlineClose } from 'react-icons/ai';
 import StarRenderer from './StarRenderer.jsx';
 import Slider from './Slider.jsx';
+import UserReview from './UserReview.jsx';
+import AddReview from './AddReview.jsx';
 
 class ReviewsModal extends React.Component {
   constructor(props) {
@@ -10,8 +12,10 @@ class ReviewsModal extends React.Component {
 
     this.state = {
       review: 3,
+      writeReviewClicked: false,
     };
   }
+
 
   render() {
     const ReviewsPopup = styled.div`
@@ -143,7 +147,7 @@ class ReviewsModal extends React.Component {
     margin-bottom: 18px;
     `;
 
-    const TotalDurability= styled.div`
+    const TotalDurability = styled.div`
     width: 25%;
     display: table;
     font-size: 11px;
@@ -161,10 +165,9 @@ class ReviewsModal extends React.Component {
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto
-    margin-top: 20px
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
     overflow: auto;
     height: fit-content;
     `;
@@ -186,7 +189,7 @@ class ReviewsModal extends React.Component {
               </ShoeContainer>
             </div>
           </ShoeHeader>
-          <button type="button" onClick={this.props.handleClick} style={{ outline: 0, position: 'absolute', top: '12px', right: '12px', paddingTop: '16px', zIndex: 10, background: '#fff'}}>
+          <button type="button" onClick={this.props.moreReviewRender} style={{ outline: 0, position: 'absolute', top: '12px', right: '12px', paddingTop: '16px', zIndex: 10, background: '#fff' }}>
             <AiOutlineClose />
           </button>
         </Header>
@@ -198,45 +201,48 @@ class ReviewsModal extends React.Component {
               </ReviewStars>
               <ReviewRating name="ReviewRating">48 Reviews</ReviewRating>
             </ReviewSummary>
-              <TotalReviews name="TotalReviews">
-                <TotalSize name="Size">
-                  <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Size</div>
-                  <div>{Slider()}</div>
-                  <div>
-                  <div style={{display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px'}}>Runs small</div>
-                  <div style={{textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px'}}>Runs Big</div>
-                  </div>
-                </TotalSize>
-                <TotalComfort name="Comfort">
-                  <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Comfort</div>
-                  <div>{Slider()}</div>
-                  <div>
-                  <div style={{display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px'}}>Runs small</div>
-                  <div style={{textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px'}}>Runs Big</div>
-                  </div>
-                </TotalComfort>
-                <TotalDurability name="Durability">
-                  <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Durability</div>
-                  <div>{Slider()}</div>
-                  <div>
-                  <div style={{display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px'}}>Runs small</div>
-                  <div style={{textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px'}}>Runs Big</div>
-                  </div>
-                </TotalDurability>
-              </TotalReviews>
-              <SortBy>
-                <div style={{textAlign: 'left', float: 'left', position: 'relative'}}>
-                  <select id="fixMe" onChange="fixMe" className="sortBy">
-                    <option value="fixMe">Sort by: Most Helpful</option>
-                    <option value="fixMe">Sort by: Newest</option>
-                    <option value="fixMe">Sort by: Highest to Lowest</option>
-                    <option value="fixMe">Sort by: Lowest to Highest</option>
-                  </select>
+            <TotalReviews name="TotalReviews">
+              <TotalSize name="Size">
+                <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Size</div>
+                <div>{Slider()}</div>
+                <div>
+                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
+                  <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
                 </div>
-                {/* <div style={{border}}></div> */}
-              </SortBy>
+              </TotalSize>
+              <TotalComfort name="Comfort">
+                <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Comfort</div>
+                <div>{Slider()}</div>
+                <div>
+                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
+                  <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
+                </div>
+              </TotalComfort>
+              <TotalDurability name="Durability">
+                <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Durability</div>
+                <div>{Slider()}</div>
+                <div>
+                  <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
+                  <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
+                </div>
+              </TotalDurability>
+            </TotalReviews>
+            <SortBy>
+              <div style={{ textAlign: 'left', float: 'left', position: 'relative' }}>
+                <select id="fixMe" className="sortBy">
+                {/* needs an onChange="fixMe" */}
+                  <option value="fixMe">Sort by: Most Helpful</option>
+                  <option value="fixMe">Sort by: Newest</option>
+                  <option value="fixMe">Sort by: Highest to Lowest</option>
+                  <option value="fixMe">Sort by: Lowest to Highest</option>
+                </select>
+              </div>
+            </SortBy>
+            <UserReview />
+            <UserReview />
           </Body2>
         </Body1>
+        {this.props.state.addReviewsModalClicked ? <AddReview handleClick={this.props.addReviewRender} moreReviewRender={this.props.moreReviewRender}/> : ''}
       </ReviewsPopup>
     );
   }
