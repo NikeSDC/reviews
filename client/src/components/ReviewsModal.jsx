@@ -1,21 +1,58 @@
 import React from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 import { AiOutlineClose } from 'react-icons/ai';
-import StarRenderer from './StarRenderer.jsx';
 import Slider from './Slider.jsx';
-import UserReview from './UserReview.jsx';
+import UserReviewList from './UserReviewList.jsx';
 import AddReview from './AddReview.jsx';
+import StarMap from './StarMap.jsx';
 
 class ReviewsModal extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      review: 3,
+      reviews: [],
+      totalRatings: this.props.state.totalRatings,
       writeReviewClicked: false,
+      totalSize: this.props.state.totalSize,
+      totalComfort: this.props.state.totalComfort,
+      totalDurability: this.props.state.totalDurability,
     };
+    this.getMostRecent = this.getMostRecent.bind(this);
+    this.getData = this.getData.bind(this);
+    // this.getAggregates = this.getAggregates.bind(this);
   }
 
+  componentDidMount() {
+    this.getMostRecent();
+  }
+
+  getMostRecent() {
+    axios.get('/api/reviews/recent10')
+      .then((res) => {
+        this.setState({
+          reviews: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  getData(e) {
+    const sort = e.target.value;
+    console.log(sort);
+    axios.get(`/api/reviews/`)
+      .then((res) => {
+        this.setState({
+          reviews: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
   render() {
     const ReviewsPopup = styled.div`
@@ -172,9 +209,6 @@ class ReviewsModal extends React.Component {
     height: fit-content;
     `;
 
-    // const TotalComfort = styled.div``;
-    // const TotalDurability = styled.div``;
-
     return (
       <ReviewsPopup>
         <Header>
@@ -196,15 +230,15 @@ class ReviewsModal extends React.Component {
         <Body1>
           <Body2>
             <ReviewSummary name="ReviewSummary">
-              <ReviewStars name="ReviewStars">
-                {StarRenderer()}
+              <ReviewStars name="ReviewStars" style={{ fontSize: '22px' }}>
+                <StarMap ratings={this.state.totalRatings} />
               </ReviewStars>
-              <ReviewRating name="ReviewRating">48 Reviews</ReviewRating>
+              <ReviewRating name="ReviewRating">{this.state.reviews.length} Reviews</ReviewRating>
             </ReviewSummary>
             <TotalReviews name="TotalReviews">
               <TotalSize name="Size">
                 <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Size</div>
-                <div>{Slider()}</div>
+                <div>{Slider(this.state.totalSize)}</div>
                 <div>
                   <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
                   <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
@@ -212,7 +246,7 @@ class ReviewsModal extends React.Component {
               </TotalSize>
               <TotalComfort name="Comfort">
                 <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Comfort</div>
-                <div>{Slider()}</div>
+                <div>{Slider(this.state.totalComfort)}</div>
                 <div>
                   <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
                   <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
@@ -220,7 +254,7 @@ class ReviewsModal extends React.Component {
               </TotalComfort>
               <TotalDurability name="Durability">
                 <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Durability</div>
-                <div>{Slider()}</div>
+                <div>{Slider(this.state.totalDurability)}</div>
                 <div>
                   <div style={{ display: 'flex', textAlign: 'left', fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs small</div>
                   <div style={{ textAlign: 'right', position: 'relative', bottom: 12, fontWeight: 'normal', whiteSpace: 'nowrap', color: '#6D6D6D', fontSize: '12px' }}>Runs Big</div>
@@ -229,37 +263,21 @@ class ReviewsModal extends React.Component {
             </TotalReviews>
             <SortBy>
               <div style={{ textAlign: 'left', float: 'left', position: 'relative' }}>
-                <select id="fixMe" className="sortBy">
-                {/* needs an onChange="fixMe" */}
-                  <option value="fixMe">Sort by: Most Helpful</option>
-                  <option value="fixMe">Sort by: Newest</option>
-                  <option value="fixMe">Sort by: Highest to Lowest</option>
-                  <option value="fixMe">Sort by: Lowest to Highest</option>
+                <select className="sortBy" onChange={this.getData}>
+                  <option value="helpful10">Sort by: Most Helpful</option>
+                  <option value="recent10">Sort by: Newest</option>
+                  <option value="highest10">Sort by: Highest to Lowest</option>
+                  <option value="lowest10">Sort by: Lowest to Highest</option>
                 </select>
               </div>
             </SortBy>
-            <UserReview />
-            <UserReview />
+            <UserReviewList reviews={this.state.reviews} />
           </Body2>
         </Body1>
-        {this.props.state.addReviewsModalClicked ? <AddReview handleClick={this.props.addReviewRender} moreReviewRender={this.props.moreReviewRender}/> : ''}
+        {this.props.state.addReviewsModalClicked ? <AddReview handleClick={this.props.addReviewRender} moreReviewRender={this.props.moreReviewRender} /> : ''}
       </ReviewsPopup>
     );
   }
 }
 
 export default ReviewsModal;
-
-// const ReviewsPopup = styled.div`
-// display: block; /* Hidden by default */
-// position: fixed; /* Stay in place */
-// z-index: 1; /* Sit on top */
-// padding-top: 100px; /* Location of the box */
-// left: 0;
-// top: 0;
-// width: 100%; /* Full width */
-// height: 100%; /* Full height */
-// overflow: auto; /* Enable scroll if needed */
-// background-color: rgb(0,0,0); /* Fallback color */
-// background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-// `;

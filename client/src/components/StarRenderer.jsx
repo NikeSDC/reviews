@@ -1,7 +1,6 @@
 import React from 'react';
 import { IoStar } from 'react-icons/io5';
 import { IoStarHalf } from 'react-icons/io5';
-import { IoStarOutline } from 'react-icons/io5';
 
 const StarRenderer = () => (
   <span className="ncss-col-sm-5 ">

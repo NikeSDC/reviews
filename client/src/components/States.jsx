@@ -1,7 +1,7 @@
 import React from 'react';
 
 const States = () => (
-  <select className="reviewsDropdowns">
+  <select className="reviewsDropdowns" id="state">
     <option> </option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

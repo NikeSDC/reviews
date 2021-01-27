@@ -3,6 +3,7 @@ import React from 'react';
 const Countries = () => (
 
   <select id="country" name="country" className="reviewsDropdowns">
+    <option value="none"> </option>
     <option value="United States">United States</option>
     <option value="Afganistan">Afghanistan</option>
     <option value="Albania">Albania</option>

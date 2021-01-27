@@ -10,6 +10,51 @@ const controller = {
         res.status(400).send(err);
       });
   },
+  getRecent: (req, res) => {
+    models.getRecent()
+      .then((results) => {
+        res.status(200).send(results);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
+  },
+  getRecent10: (req, res) => {
+    models.getRecent10()
+      .then((results) => {
+        res.status(200).send(results);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
+  },
+  getHelpful10: (req, res) => {
+    models.getHelpful10()
+      .then((results) => {
+        res.status(200).send(results);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
+  },
+  getHighest10: (req, res) => {
+    models.getHighest10()
+      .then((results) => {
+        res.status(200).send(results);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
+  },
+  getLowest10: (req, res) => {
+    models.getLowest10()
+      .then((results) => {
+        res.status(200).send(results);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
+  },
   post: (req, res) => {
     models.addReview(req.body)
       .then((results) => {

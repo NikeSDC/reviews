@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { IoStar } from 'react-icons/io5';
 import { IoStarHalf } from 'react-icons/io5';
 import { IoStarOutline } from 'react-icons/io5';
@@ -9,68 +10,76 @@ import { AiOutlineClose } from 'react-icons/ai';
 import Star from './Star.jsx';
 import Countries from './Countries.jsx';
 import States from './States.jsx';
+import ReviewStars from './ReviewStars.jsx';
 
 class AddReview extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      runsSmall: 0,
-      justRight: 0,
-      runsBig: 0,
-      uncomfortable: 0,
-      sizeAverage: 0,
-      veryComfortable: 0,
-      notDurable: 0,
-      durableAverage: 0,
-      veryDurable: 0,
-      username: "",
-      reviewTitle: "",
-      review: "",
-      country: "",
-      city: "",
-      state: "",
-      playArea: "",
-      offenseStyle: "",
-      defenseStyle: "",
-
+      overallRating: null,
+      size: null,
+      comfort: null,
+      durability: null,
+      username: null,
+      reviewTitle: null,
+      review: null,
+      country: null,
+      city: null,
+      state: null,
+      playArea: null,
+      offenseStyle: null,
+      defenseStyle: null,
+      upvote: 0,
+      downvote: 0,
     };
     this.renderStars = this.renderStars.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.setRating = this.setRating.bind(this);
+  }
+
+  handleChange(e) {
+    e.preventDefault();
+    const target = e.target.id;
+    const value = e.target.value;
+
+    this.state[target] = value;
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.state)
+    axios.post('/api/reviews', this.state)
+      .then(alert('Thanks for your feedback'))
+      .then(this.props.handleClick)
+      .catch((err) => console.log(err));
+  }
+
+  setRating(value) {
+    this.state.overallRating = value;
   }
 
   handleClick(e) {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
+    e.preventDefault();
+    const value = e.target.value;
+    const target = e.target.name;
+
+    this.state[target] = value;
   }
+
   renderStars() {
-    return(
-      <span className="starEmpty">
+    return (
+      <span className="starFill">
+        <Star />
+        <Star />
+        <Star />
+        <Star />
         <Star />
       </span>
     )
-
-    // return (
-    //   <span className="ncss-col-sm-5 ">
-    //     <span className="mr1-sm">
-    //       <i><IoStarOutline style={{color: 'red', fill: 'black'}}/></i>
-    //     </span>
-    //     <span className="mr1-sm">
-    //       <i><IoStarOutline /></i>
-    //     </span>
-    //     <span className="mr1-sm">
-    //       <i><IoStarOutline /></i>
-    //     </span>
-    //     <span className="mr1-sm">
-    //       <i><IoStarOutline /></i>
-    //     </span>
-    //     <span className="mr1-sm">
-    //       <i><IoStarOutline /></i>
-    //     </span>
-    //   </span>
-    // )
   }
-
 
   render() {
     // might want to change the position to absolute later!!
@@ -218,28 +227,28 @@ class AddReview extends React.Component {
                       Overall rating:
                     <span style={{ color: 'red' }}> &nbsp; *</span>
                     </div>
-                    {this.renderStars()}
+                    <ReviewStars setRating={this.setRating} />
                   </div>
                 </OverallRating>
               </WriteRevHeader>
               <div name="RadioSection" className="RadioSection">
                 <Radio name="Radio">
                   <AttributeContainer name="AttributeContainer">Size:</AttributeContainer>
-                  <RadioButtons onClick={(e) => {console.log(e.target.id, e.target.value)}}>
-                    <span className="radioButton" name="randomTest" >
-                      <input type="radio" name="size" value="1" id="runsSmall"/>
+                  <RadioButtons>
+                    <span className="radioButton" name="randomTest">
+                      <input type="radio" name="size" value="1" id="runsSmall" onChange={this.handleClick} />
                     &nbsp; Runs Small
                   </span>
                   </RadioButtons>
-                  <RadioButtons onClick={(e) => {console.log(e.target.id, e.target.value)}}>
+                  <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="size" value="1" />
+                      <input type="radio" name="size" id="justRight" value="2" onChange={this.handleClick} />
                     &nbsp; Just Right
                   </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="size" value="1" />
+                      <input type="radio" name="size" id="runsBig" value="3" onChange={this.handleClick} />
                     &nbsp; Runs Big
                   </span>
                   </RadioButtons>
@@ -248,19 +257,19 @@ class AddReview extends React.Component {
                   <AttributeContainer name="AttributeContainerComfort">Comfort:</AttributeContainer>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="comfort" value="1" />
+                      <input type="radio" name="comfort" id="uncomfortable" value="1" onChange={this.handleClick} />
                     &nbsp; Uncomfortable
                   </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="comfort" value="1" />
+                      <input type="radio" name="comfort" id="comfortAverage" value="2" onChange={this.handleClick} />
                     &nbsp; Average
                   </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="comfort" value="1" />
+                      <input type="radio" name="comfort" id="veryComfortable" value="3" onChange={this.handleClick} />
                     &nbsp; Very Comfortable
                   </span>
                   </RadioButtons>
@@ -269,19 +278,19 @@ class AddReview extends React.Component {
                   <AttributeContainer name="AttributeContainerDurability">Durability:</AttributeContainer>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="durability" value="1" />
+                      <input type="radio" name="durability" id="notDurable" value="1" onChange={this.handleClick} />
                     &nbsp; Not Durable
                   </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="durability" value="1" />
+                      <input type="radio" name="durability" id="durableAverage" value="2" onChange={this.handleClick} />
                     &nbsp; Average
                   </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="durability" value="1" />
+                      <input type="radio" name="durability" id="veryDurable" value="3" onChange={this.handleClick} />
                     &nbsp; Very Durable
                   </span>
                   </RadioButtons>
@@ -291,21 +300,21 @@ class AddReview extends React.Component {
                 <ReviewInput>
                   <Title>Username:</Title>
                   <div className="reviewTextField">
-                    <TextBox placeholder="Headline or summary for your review" name="username">
+                    <TextBox placeholder="Headline or summary for your review" id="username" onChange={this.handleChange}>
                     </TextBox>
                   </div>
                 </ReviewInput>
                 <ReviewInput>
                   <Title>Review Title:</Title>
                   <div className="reviewTextField">
-                    <TextBox name="title" placeholder="Headline or summary for your review">
+                    <TextBox id="reviewTitle" placeholder="Headline or summary for your review" onChange={this.handleChange}>
                     </TextBox>
                   </div>
                 </ReviewInput>
                 <ReviewInput>
                   <Title>Review<span style={{ color: 'red' }}>*</span></Title>
-                  <div className="reviewTextField" >
-                    <TextBox name="review" style={{ height: '112px', minHeight: '112px', resize: 'vertical' }} placeholder="Write your review here. It must be at least 5 characters long. Consider whether you would recommend this product and what you like or dislike about it.">
+                  <div className="reviewTextField">
+                    <TextBox id="review" onChange={this.handleChange} style={{ height: '112px', minHeight: '112px', resize: 'vertical' }} placeholder="Write your review here. It must be at least 5 characters long. Consider whether you would recommend this product and what you like or dislike about it.">
                     </TextBox>
                   </div>
                 </ReviewInput>
@@ -313,27 +322,27 @@ class AddReview extends React.Component {
               <div className="reviewInput" style={{ borderBottom: 'none' }}>
                 <ReviewInput>
                   <Title>Country/Region:</Title>
-                  <div className="reviewTextField" name="country">
+                  <div className="reviewTextField" id="country" onChange={this.handleChange}>
                     {Countries()}
                   </div>
                 </ReviewInput>
                 <ReviewInput>
                   <Title>City:</Title>
                   <div className="reviewTextField">
-                  <TextBox placeholder="Enter your city" name="city">
+                    <TextBox placeholder="Enter your city" id="city" onChange={this.handleChange}>
                     </TextBox>
                   </div>
                 </ReviewInput>
                 <ReviewInput>
                   <Title>State:</Title>
-                  <div className="reviewTextField" name="state">
+                  <div className="reviewTextField" id="state" onChange={this.handleChange}>
                     {States()}
                   </div>
                 </ReviewInput>
                 <ReviewInput>
                   <Title>I play on:</Title>
                   <div className="reviewTextField">
-                    <select className="reviewsDropdowns" name="playArea">
+                    <select className="reviewsDropdowns" name="playArea" id="playArea" onChange={this.handleChange}>
                       <option> </option>
                       <option>Indoor Court</option>
                       <option>Outdoor Court</option>
@@ -344,7 +353,7 @@ class AddReview extends React.Component {
                 <ReviewInput>
                   <Title>My offense style:</Title>
                   <div className="reviewTextField" name="offenseStyle">
-                    <select className="reviewsDropdowns">
+                    <select className="reviewsDropdowns" id="offenseStyle" onChange={this.handleChange}>
                       <option> </option>
                       <option>Create Off The Dribble</option>
                       <option>Drive The Lane</option>
@@ -357,7 +366,7 @@ class AddReview extends React.Component {
                 <ReviewInput>
                   <Title>My defense style:</Title>
                   <div className="reviewTextField" name="defenseStyle">
-                    <select className="reviewsDropdowns">
+                    <select className="reviewsDropdowns" id="defenseStyle" onChange={this.handleChange}>
                       <option> </option>
                       <option>Lock Down The Scorer</option>
                       <option>Defend the Perimeter</option>
@@ -368,10 +377,10 @@ class AddReview extends React.Component {
                   </div>
                 </ReviewInput>
               </div>
-              <div style={{textAlign: 'center', fontSize: '11px', color: '#8D8D8D'}}>
+              <div style={{ textAlign: 'center', fontSize: '11px', color: '#8D8D8D' }}>
                 I understand my rating and review may appear publicly as a Nike Verified Purchase and data I provide may appear with my public review. By clicking Submit, I agree to <u><b>Privacy Policy</b></u>, <u><b>Terms of Use</b></u>, and <u><b>Terms of Service</b></u>.
               </div>
-              <button className="submitReview" value="Submit">SUBMIT</button>
+              <button className="submitReview" value="Submit" onClick={this.handleSubmit}>SUBMIT</button>
               <ReviewInput> &nbsp; </ReviewInput>
               <ReviewInput> &nbsp; </ReviewInput>
             </Outline2>

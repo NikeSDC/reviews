@@ -1,17 +1,53 @@
 import React from 'react';
 import styled from 'styled-components';
-import StarRenderer from './StarRenderer.jsx'
+import moment from 'moment';
+import axios from 'axios';
 import SizeSlider from './SizeSlider.jsx'
 import ComfortSlider from './ComfortSlider.jsx'
 import DurabilitySlider from './DurabilitySlider.jsx'
-import { BsShift } from 'react-icons/bs';
-import { BsShiftFill } from 'react-icons/bs';
-import { RiFlag2Line } from 'react-icons/ri';
+import Upvoting from './Upvote.jsx';
+import Downvote from './Downvote.jsx';
+import Flag from './Flag.jsx';
+import StarMap from './StarMap.jsx';
 
 class UserReview extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      upvote: this.props.reviews.upvote,
+      downvote: this.props.reviews.downvote,
+      flagged: false,
+    };
+    this.upVote = this.upVote.bind(this);
+    this.downVote = this.downVote.bind(this);
+    this.clickFlag = this.clickFlag.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState({
+      flagged: true,
+    });
+  }
+
+  downVote() {
+    axios.put(`/api/reviews/${this.props.reviews._id}`, {
+      downvote: this.props.reviews.downvote + 1,
+    })
+      .then(this.setState({ downvote: this.props.reviews.downvote + 1 }))
+      .catch(err => console.log(err));
+  }
+
+  upVote() {
+    axios.put(`/api/reviews/${this.props.reviews._id}`, {
+      upvote: this.props.reviews.upvote + 1,
+    })
+      .then(this.setState({ upvote: this.props.reviews.upvote + 1 }))
+      .catch(err => console.log(err));
+  }
+
+  clickFlag() {
+    return !this.state.flagged ? <Flag /> : <div className="handleFlag">This post has been flagged. Thank you.</div>;
   }
 
   render() {
@@ -94,65 +130,69 @@ class UserReview extends React.Component {
     flex-direction: row;
     `;
 
+    const review = this.props.reviews;
+    const userSize = (review.size / 3) * 100;
+    const userComfort = (review.comfort / 3) * 100;
+    const userDurability = (review.durability / 3) * 100;
+    console.log(this.props)
+
     return (
       <ReviewContainer>
         <ReviewContainerA>
-          <StarDiv>
-            {StarRenderer()}
+          <StarDiv name="starDiv" style={{ fontSize: '20px' }}>
+            <StarMap ratings={review.overallRating} />
           </StarDiv>
           <Attributes>
-            {SizeSlider()}
+            {SizeSlider(userSize)}
           </Attributes>
           <Attributes>
-            {ComfortSlider()}
+            {ComfortSlider(userComfort)}
           </Attributes>
           <Attributes>
-            {DurabilitySlider()}
+            {DurabilitySlider(userDurability)}
           </Attributes>
         </ReviewContainerA>
         <ReviewContainerB>
           <div>
-            <Title>These Shoes are great for kicking butt!!</Title>
-            <Comment>
-              I basically just like to kick people in the butt from time to time. I find that these shoes give me the appropriate amount of leverage to angle my feet with the perfect precision to be able to rupture peoples' buttholes. Thanks Nike!!
-          </Comment>
+            <Title>{review.reviewTitle}</Title>
+            <Comment>{review.review}</Comment>
           </div>
           <div>
             <Details>
               <div name="address" style={{ display: 'flex', flexDirection: 'row' }}>
-                <div>January 22, 2021 &nbsp; </div>
-                <div style={{ fontWeight: 'bold' }}> -- username -- &nbsp;  </div>
-                <div> Los Angeles, &nbsp; &nbsp;  </div>
-                <div> CA US </div>
+                <div>{moment(review.createdAt).format('LL')} &nbsp; </div>
+                <div style={{ fontWeight: '500', color: '#6D6D6D' }} name="username"> -- {review.username} -- &nbsp; &nbsp; </div>
+                <div> {review.city}, &nbsp; &nbsp;  </div>
+                <div> {review.state},  {review.country} </div>
               </div>
               <div name="Verified" style={{ color: '#FA5400' }}> Verified Purchaser</div>
-              <div name="PlayStyle" style={{ display: 'flex', flexDirection: 'row' }}>
-                <div name="playstyle">I play on: </div>
-                <div name="offense">My offense style: </div>
-                <div name="defense">My defense style: </div>
+              <div name="PlayStyle" style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
+                <div name="playstyle" style={{paddingRight: '3px'}}>I play on: {review.playArea} -- </div>
+                <div name="offense" style={{paddingRight: '3px'}}>My offense style: {review.offenseStyle} -- </div>
+                <div name="defense" style={{paddingRight: '3px'}}>My defense style: {review.defenseStyle}</div>
               </div>
             </Details>
           </div>
           <div>
-            <Upvote>
-              <div>
-              <button onMouseOver={() => { <BsShiftFill /> }}>
-                <BsShift style={{backgroundColor: 'rgba(0,0,0,.5)', background: '#FFF'}}/>
-                </button>
-                &nbsp;
-                0
+            <Upvote name="vote">
+              <div style={{ paddingRight: '23px', display: 'inline-flex' }}>
+                <div name="upvote" className="UpvoteArrow" onClick={() => this.upVote}>
+                  <Upvoting fill="black" upVote={this.upVote} />
                 </div>
-                <div>
-              <button type="button"  onMouseOver={() => { BsShiftFill }} style={{ transform: 'rotate(180deg' }}>
-                <BsShift />
-                </button>
                 &nbsp;
-                0
+                <span style={{ fontSize: '14px', position: 'relative', top: '3px' }}>{this.state.upvote}</span>
+              </div>
+              <div style={{ paddingRight: '23px', display: 'inline-flex' }}>
+                <div name="downvote" className="UpvoteArrow" style={{ transform: 'rotate(180deg' }}>
+                  <Downvote downVote={this.downVote} />
+                </div>
+                &nbsp;
+                <span style={{ fontSize: '14px', position: 'relative', top: '3px' }}>{this.state.downvote}</span>
               </div>
               <div>
-              <button type="button">
-                <RiFlag2Line />
-              </button>
+                <a name="flag" className="flag" onClick={this.handleClick}>
+                {this.clickFlag()}
+                </a>
               </div>
             </Upvote>
           </div>

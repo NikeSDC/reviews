@@ -10,28 +10,28 @@ mongoose.connect(mongoURI)
   });
 
 const reviewSchema = mongoose.Schema({
-  user_name: {
+  username: {
     type: String,
+    unique: true,
   },
-  platform: String,
-  rating: Number,
-  title: Number,
-  text: String,
-  timestamp: String,
+  country: String,
+  city: String,
+  comfort: Number,
+  durability: Number,
+  offenseStyle: String,
+  defenseStyle: String,
+  overallRating: Number,
+  playArea: String,
+  review: String,
+  reviewTitle: String,
+  size: Number,
+  state: String,
+  upvote: Number,
+  downvote: Number,
+}, {
+  timestamps: true,
 });
 
 const Reviews = mongoose.model('Reviews', reviewSchema);
 
 module.exports = Reviews;
-
-// user_name: {
-//   type: String,
-//   unique: true
-// },
-// location: String,
-// rating: Number,
-// review: String,
-// {
-//   timestamps: true
-// }
-// })

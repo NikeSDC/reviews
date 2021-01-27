@@ -274,7 +274,7 @@ h3 {
 }
 
 .css-15oagn2 {
-  min-width: 320px;
+  min-width: 100%;
 }
 
 .css-aguiio {
@@ -403,7 +403,7 @@ START OF STYLING FOR ARROW
   text-align: left;
 }
 
-.css-7eklhh {
+/* .css-7eklhh {
   padding: 0 4px;
   text-align: right;
   position: absolute;
@@ -412,15 +412,15 @@ START OF STYLING FOR ARROW
   -ms-transform: translateY(-80%);
   transform: translateY(-80%);
   right: 0;
-}
+} */
 /* This is the space between the arrows*/
 
 .ncss-col-sm-5 {
-  width: auto; /*changed from 16.666666%*/
+  width: 16.66666%; /*changed from 16.666666%*/
   display: inline-flex;
 }
 .ncss-col-sm-51 {
-  width: auto; /*changed from 16.666666%*/
+  width: 16.6666%; /*changed from 16.666666%*/
   display: inline-block;
 }
 /* This is the space between the arrows*/
@@ -428,6 +428,12 @@ START OF STYLING FOR ARROW
   width: 1.5%; /*changed from 16.666666%*/
   display: inline-block;
 }
+.arrowDropdown {
+  display: flex;
+  width: 16.6666%;
+  justify-content: flex-end;
+}
+
 .shoeImage {
   max-width: 60px;
   max-height: 60px;
@@ -733,13 +739,26 @@ ADDREVIEWS SECTION
 .starEmpty {
   fill: #e5e5e5;
   color: black;
-  transform: scale(1.6);
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+.star1 {
+  transform: scale(0.9);
+  cursor: none;
 }
 
 .starEmpty :hover {
   fill: black;
   color: black;
-  transform: scale(1.7);
+  transform: scale(1.6);
+}
+
+.starFill {
+  fill: black;
+  color: black;
+  transform: scale(1.6);
+  margin-right: 10px;
 }
 
 .radioButton {
@@ -795,7 +814,48 @@ ADDREVIEWS SECTION
   font-size: 15px;
   margin-top: 12px;
 }
-
+.writeReviewButton {
+  background: #fff;
+  color: #111;
+  box-shadow: inset 0 -1px 0 0 #111;
+  padding-bottom: 2px;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  font-family: "Helvetica Neue";
+}
+.writeReviewButton :hover {
+  box-shadow: inset 0 10px 0 0 #111;
+  color: red;
+}
+.upvoteArrow  {
+  font-size: 20px;
+  cursor: pointer;
+  color: #6d6d6d;
+  fill: #6d6d6d;
+  margin-right: 3px;
+}
+.upvoteArrow :hover  {
+  font-size: 20px;
+  cursor: pointer;
+  color: #6d6d6d;
+  fill: #6d6d6d;
+}
+.flag {
+  cursor: pointer;
+  background: none;
+  color: #6d6d6d;
+  fill: #6d6d6d;
+  font-size: 20px;
+  font-weight: normal;
+}
+.handleFlag {
+  display: flex;
+  background: none;
+  color: #6d6d6d;
+  font-size: 12px;
+  font-weight: normal;
+}
 /*
 .pre-scrim {
   background-color: hsla(0,0%,7%,.36);
@@ -817,3 +877,34 @@ ADDREVIEWS SECTION
   visibility: visible;
   transition: opacity .8s ease,visibility 0s;
 } */
+
+.textBoxer {
+  min-height: 43px;
+  padding: 18px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 23px;
+  resize: vertical;
+  background: #FFF;
+  font-family: 'Helvetica Neue',Helvetica,Verdana,Arial,Helvetica,sans-serif;
+  border: 1px solid #e6e7e8;
+  margin-bottom: 2px;
+  border-radius: 2px !important;
+  color: black;
+}
+
+.titlee {
+  width: 33.33%;
+    font-size: 14px;
+    font-weight: normal;
+    color: #111;
+    float: left;
+}
+
+.reviewInput1 {
+  margin-bottom: 24px;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}

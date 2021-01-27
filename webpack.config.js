@@ -7,13 +7,6 @@ const OUT_DIR = path.join(__dirname, 'client')
 module.exports = {
   mode: 'development',
   entry: SRC_DIR,
-  externals: {
-    'styled-components': {
-      commonjs: 'styled-components',
-      commonjs2: 'styled-components',
-      amd: 'styled-components',
-    },
-  },
   output: {
     path: path.join(OUT_DIR, 'dist'),
     filename: 'bundle.js'
@@ -33,3 +26,10 @@ module.exports = {
   }
 }
 
+// externals: {
+//   'styled-components': {
+//     commonjs: 'styled-components',
+//     commonjs2: 'styled-components',
+//     amd: 'styled-components',
+//   },
+// },

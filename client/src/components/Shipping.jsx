@@ -13,11 +13,8 @@ class Shipping extends React.Component {
 
   toggleAccordion(e) {
     this.setState({ active: !this.state.active });
-
-    console.log(this.state.active)
+    // console.log(this.state.active)
   }
-
-
 
   render() {
     const buttonStyle = {
