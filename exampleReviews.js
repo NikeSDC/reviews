@@ -1,0 +1,38 @@
+const SampleReviews = [
+  {
+    "overallRating": 5,
+    "size": 2,
+    "comfort": 3,
+    "durability": 2,
+    "username": "dubai",
+    "reviewTitle": "test",
+    "review": "This is simply a test to ensure this project's functionality. The shoes themselves are just alright. Not a huge fan of the Lebrons",
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "playArea": "I use these casually",
+    "offenseStyle": "Drive The Lane",
+    "defenseStyle": "Defend the Perimeter",
+    "upvote": 13,
+    "downvote": 13,
+  },
+  {
+    "overallRating": 5,
+    "size": 3,
+    "comfort": 3,
+    "durability": 3,
+    "username": "dubz",
+    "reviewTitle": "test",
+    "review": "testing",
+    "country": "Andorra",
+    "city": "Northridge",
+    "state": "CA",
+    "playArea": "I use these casually",
+    "offenseStyle": "Drive The Lane",
+    "defenseStyle": "Guard The Ball Handler",
+    "upvote": 10,
+    "downvote": 6,
+  },
+];
+
+module.exports = SampleReviews;
