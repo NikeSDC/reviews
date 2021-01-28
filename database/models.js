@@ -1,33 +1,45 @@
 const Reviews = require('./');
 
 const models = {
-  getReviews: () => {
-    return Reviews.find();
-  },
+  getReviews: () => (
+    Reviews.find()
+  ),
 
-  addReview: (review) => {
-    return Reviews.create(review);
-  },
+  getRecent: () => (
+    Reviews.find().sort({ _id: -1 }).limit(3)
+  ),
 
-  updateReview: (id, review) => {
-    return Reviews.findOneAndUpdate({_id: id}, review)
-  },
+  getUser: (id) => (
+    Reviews.find({ _id: id })
+  ),
 
-  deleteReview: (id) => {
-    return Reviews.remove({_id: id})
-  }
-}
+  getRecent10: () => (
+    Reviews.find().sort({ _id: -1 }).limit(10)
+  ),
+
+  getHelpful10: () => (
+    Reviews.find().sort({ upvote: -1 }).limit(10)
+  ),
+
+  getHighest10: () => (
+    Reviews.find().sort({ overallRating: -1 }).limit(10)
+  ),
+
+  getLowest10: () => (
+    Reviews.find().sort({ overallRating: +1 }).limit(10)
+  ),
+
+  addReview: (review) => (
+    Reviews.create(review)
+  ),
+
+  updateReview: (id, review) => (
+    Reviews.findOneAndUpdate({ _id: id }, review)
+  ),
+
+  deleteReview: (id) => (
+    Reviews.remove({ _id: id })
+  ),
+};
 
 module.exports = models;
-
-// user_name: {
-//   type: String,
-//   unique: true
-// },
-// location: String,
-// rating: Number,
-// review: String,
-// {
-//   timestamps: true
-// }
-// })
