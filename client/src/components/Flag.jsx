@@ -4,7 +4,7 @@ import React from "react";
 function Flag(props) {
 
   return (
-    <a href="none" onClick={(event) => {event.preventDefault(), console.log('hello')}} name={"flag"}>
+    <a href="none" onClick={(event) => {event.preventDefault(), console.log('this user has been flagged')}} name={"flag"}>
       <svg
       id = "flag"
         height="1em"

@@ -29,6 +29,10 @@ router
   .get(controller.getLowest10);
 
 router
+  .route('/reviews/user/:id')
+  .get(controller.getUser);
+
+router
   .route('/reviews/:id')
   .put(controller.put)
   .delete(controller.delete);

@@ -14,12 +14,6 @@ class ReviewStars extends React.Component {
 
   handleChange(e) {
     const target = e.target.value;
-
-    console.log('event: ', e.target);
-    console.log('target: ', target);
-    console.log('id: ', e.target.id);
-    console.log('name: ', e.target.name);
-
     this.setState({
       hovered: target,
     });

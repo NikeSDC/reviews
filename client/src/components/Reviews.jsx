@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import { IoStar } from 'react-icons/io5';
-import { IoStarHalf } from 'react-icons/io5';
 import styled from 'styled-components';
 import ReviewList from './ReviewList.jsx'
 import ReviewsModal from './ReviewsModal.jsx'
@@ -26,11 +24,11 @@ class Reviews extends React.Component {
       totalDurability: 0,
     };
     this.toggleAccordion = this.toggleAccordion.bind(this);
-    // this.starRender = this.starRender.bind(this);
     this.moreReviews = this.moreReviews.bind(this);
     this.addReviews = this.addReviews.bind(this);
     this.getReviews = this.getReviews.bind(this);
     this.getAggregates = this.getAggregates.bind(this);
+    this.getData = this.getData.bind(this);
   }
 
   componentDidMount() {
@@ -38,37 +36,46 @@ class Reviews extends React.Component {
   }
 
   getReviews() {
-    axios.get('/api/reviews')
+    axios.get('/api/reviews/recent10')
       .then((res) => {
         this.setState({
           reviews: res.data,
         }, () => {
-          console.log(this.state.reviews),
-            this.setState({ numberOfReviews: this.state.reviews.length },
-              () => {
-                let totalRating = 0;
-                this.state.reviews.forEach(ratings => {
-                  totalRating += ratings.overallRating;
-                });
-                const aggregatedReviews = (totalRating / this.state.reviews.length).toFixed(2);
-                this.setState({ totalRatings: aggregatedReviews }, () => { console.log(this.state.totalRatings) });
+          this.setState({ numberOfReviews: this.state.reviews.length },
+            () => {
+              let totalRating = 0;
+              this.state.reviews.forEach(ratings => {
+                totalRating += ratings.overallRating;
               });
+              const aggregatedReviews = (totalRating / this.state.reviews.length).toFixed(2);
+              this.setState({ totalRatings: aggregatedReviews });
+            });
         }, this.getAggregates(res.data));
       })
       .then(
         axios.get('/api/reviews/recent')
-          .then(res => {
+          .then((res) => {
             this.setState({
               recentReviews: res.data,
             });
-          })
+          }),
       )
-      .catch(err => { console.log(err) });
+      .catch((err) => { console.log(err) });
   }
 
-  // updateReviews() {
-
-  // }
+  getData(e) {
+    const sort = e.target.value;
+    console.log(sort);
+    axios.get(`/api/reviews/${sort}`)
+      .then((res) => {
+        this.setState({
+          reviews: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
   getAggregates(data) {
     let size = 0;
@@ -81,16 +88,11 @@ class Reviews extends React.Component {
       comfort += (review.comfort / 3);
       durability += (review.durability / 3);
     });
-    console.log('durability: ', durability)
 
     const totalSize = (size / length) * 100;
     const totalComfort = (comfort / length) * 100;
     const totalDurability = (durability / length) * 100;
 
-    console.log('size: ', totalSize);
-    console.log('comfort: ', totalComfort);
-    console.log('Totaldurability: ', totalDurability);
-    console.log('length: ', length);
     this.setState({
       totalSize: totalSize,
       totalComfort: totalComfort,
@@ -109,7 +111,7 @@ class Reviews extends React.Component {
   addReviews() {
     this.setState({
       addReviewsModalClicked: !this.state.addReviewsModalClicked,
-    }, this.getReviews());
+    }, this.getReviews())
   }
 
   // this will add a setTimeout so that addReviews appears a second after displaying more reviews
@@ -130,8 +132,6 @@ class Reviews extends React.Component {
       position: 'relative',
       display: 'flex',
     };
-
-    const starWidth = { "width": 59 }; //should be in percentage
 
     const ReviewsContainer1 = styled.div`
       padding-top: 20px;
@@ -231,11 +231,11 @@ class Reviews extends React.Component {
                   Write a Review
               </WriteReviewButton>
               </p>
-              {this.state.addReviewsModalClicked ? <ReviewsModal addReviewRender={this.addReviews} moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} /> : ''}
+              {this.state.addReviewsModalClicked ? <ReviewsModal addReviewRender={this.addReviews} moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} getData={this.getData}/> : ''}
               <ReviewList reviews={this.state.recentReviews} getReviews={this.getReviews} />
               <MoreReviews onClick={this.moreReviews} name="moreReviewsModalClicked">More Reviews</MoreReviews>
               {this.state.moreReviewsModalClicked === true ? <ReviewsModal
-              moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} /> : ''}
+                moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} getData={this.getData} /> : ''}
             </ProductReview>
           </ReviewsContainer2>
         </ReviewsContainer1>

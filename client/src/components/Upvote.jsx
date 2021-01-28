@@ -11,6 +11,7 @@ function Upvote(props) {
         viewBox="0 0 16 16"
         xmlns="http://www.w3.org/2000/svg"
         fill={props.fill}
+        fontSize="20px"
 
       >
         <path name="upvote"

@@ -22,20 +22,29 @@ class UserReview extends React.Component {
     this.downVote = this.downVote.bind(this);
     this.clickFlag = this.clickFlag.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    // this.getUser = this.getUser.bind(this);
   }
 
   handleClick() {
     this.setState({
       flagged: true,
     });
+    // this.getUser()
   }
+  // getUser() {
+  //   axios.get(`/api/reviews/user/${this.props.reviews._id}`, {
+  //     _id: this.props.reviews._id
+  //   })
+  //     .then(res => console.log(res.data))
+
+  // }
 
   downVote() {
     axios.put(`/api/reviews/${this.props.reviews._id}`, {
       downvote: this.props.reviews.downvote + 1,
     })
       .then(this.setState({ downvote: this.props.reviews.downvote + 1 }))
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }
 
   upVote() {
@@ -43,7 +52,7 @@ class UserReview extends React.Component {
       upvote: this.props.reviews.upvote + 1,
     })
       .then(this.setState({ upvote: this.props.reviews.upvote + 1 }))
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }
 
   clickFlag() {
@@ -134,7 +143,6 @@ class UserReview extends React.Component {
     const userSize = (review.size / 3) * 100;
     const userComfort = (review.comfort / 3) * 100;
     const userDurability = (review.durability / 3) * 100;
-    console.log(this.props)
 
     return (
       <ReviewContainer>
@@ -176,23 +184,23 @@ class UserReview extends React.Component {
           <div>
             <Upvote name="vote">
               <div style={{ paddingRight: '23px', display: 'inline-flex' }}>
-                <div name="upvote" className="UpvoteArrow" onClick={() => this.upVote}>
+                <div name="upvote" className="upvoteArrow" onClick={() => this.upVote}>
                   <Upvoting fill="black" upVote={this.upVote} />
                 </div>
                 &nbsp;
                 <span style={{ fontSize: '14px', position: 'relative', top: '3px' }}>{this.state.upvote}</span>
               </div>
               <div style={{ paddingRight: '23px', display: 'inline-flex' }}>
-                <div name="downvote" className="UpvoteArrow" style={{ transform: 'rotate(180deg' }}>
+                <div name="downvote" className="upvoteArrow" style={{ transform: 'rotate(180deg', position: 'relative', bottom: '1px'}}>
                   <Downvote downVote={this.downVote} />
                 </div>
                 &nbsp;
                 <span style={{ fontSize: '14px', position: 'relative', top: '3px' }}>{this.state.downvote}</span>
               </div>
               <div>
-                <a name="flag" className="flag" onClick={this.handleClick}>
+                <span name="flag" className="flag" onClick={this.handleClick}>
                 {this.clickFlag()}
-                </a>
+                </span>
               </div>
             </Upvote>
           </div>

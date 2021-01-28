@@ -12,47 +12,47 @@ class ReviewsModal extends React.Component {
     super(props);
 
     this.state = {
-      reviews: [],
+      reviews: this.props.state.reviews,
       totalRatings: this.props.state.totalRatings,
       writeReviewClicked: false,
       totalSize: this.props.state.totalSize,
       totalComfort: this.props.state.totalComfort,
       totalDurability: this.props.state.totalDurability,
     };
-    this.getMostRecent = this.getMostRecent.bind(this);
-    this.getData = this.getData.bind(this);
+    // this.getMostRecent = this.getMostRecent.bind(this);
+    // this.getData = this.getData.bind(this);
     // this.getAggregates = this.getAggregates.bind(this);
   }
 
-  componentDidMount() {
-    this.getMostRecent();
-  }
+  // componentDidMount() {
+  //   this.getMostRecent();
+  // }
 
-  getMostRecent() {
-    axios.get('/api/reviews/recent10')
-      .then((res) => {
-        this.setState({
-          reviews: res.data,
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+  // getMostRecent() {
+  //   axios.get('/api/reviews/recent10')
+  //     .then((res) => {
+  //       this.setState({
+  //         reviews: res.data,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
 
-  getData(e) {
-    const sort = e.target.value;
-    console.log(sort);
-    axios.get(`/api/reviews/`)
-      .then((res) => {
-        this.setState({
-          reviews: res.data,
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+  // getData(e) {
+  //   const sort = e.target.value;
+  //   console.log(sort);
+  //   axios.get(`/api/reviews/${sort}`)
+  //     .then((res) => {
+  //       this.setState({
+  //         reviews: res.data,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
 
   render() {
     const ReviewsPopup = styled.div`
@@ -128,18 +128,19 @@ class ReviewsModal extends React.Component {
     flex-wrap: wrap;
     `;
 
-    const ReviewSummary = styled.div`
+    const ReviewSummary1 = styled.div`
     background: transparent;
     border: 0;
     padding: 20px 0 0;
-    margin: 10 auto;
-    max-width: 1000px;
-    display: flex
+    margin: auto;
+    margin-top: 30px;
+    width: 100%
+    display: flex;
     flex-direction: column;
     `;
 
     const ReviewStars = styled.div`
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     `;
     // font-family: "Nike TG", Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -152,7 +153,9 @@ class ReviewsModal extends React.Component {
     font-weight: 500;
     display: flex;
     line-height: 1;
-    margin: 30 5px;
+    margin: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
     `;
     const TotalReviews = styled.div`
     text-align: center;
@@ -227,14 +230,14 @@ class ReviewsModal extends React.Component {
             <AiOutlineClose />
           </button>
         </Header>
-        <Body1>
-          <Body2>
-            <ReviewSummary name="ReviewSummary">
+        <Body1 name="Body1">
+          <Body2 name="Body2">
+            <ReviewSummary1 name="ReviewSummary1">
               <ReviewStars name="ReviewStars" style={{ fontSize: '22px' }}>
                 <StarMap ratings={this.state.totalRatings} />
               </ReviewStars>
               <ReviewRating name="ReviewRating">{this.state.reviews.length} Reviews</ReviewRating>
-            </ReviewSummary>
+            </ReviewSummary1>
             <TotalReviews name="TotalReviews">
               <TotalSize name="Size">
                 <div style={{ fontWeight: 'normal', textAlign: 'left', marginBottom: '7px', color: '#111', fontSize: '14px', marginTop: '4px', display: 'flex' }}>Size</div>
@@ -263,7 +266,8 @@ class ReviewsModal extends React.Component {
             </TotalReviews>
             <SortBy>
               <div style={{ textAlign: 'left', float: 'left', position: 'relative' }}>
-                <select className="sortBy" onChange={this.getData}>
+                <select className="sortBy" onChange={this.props.getData}>
+                  <option>Sort: </option>
                   <option value="helpful10">Sort by: Most Helpful</option>
                   <option value="recent10">Sort by: Newest</option>
                   <option value="highest10">Sort by: Highest to Lowest</option>

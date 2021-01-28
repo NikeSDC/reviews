@@ -231,26 +231,26 @@ class AddReview extends React.Component {
                   </div>
                 </OverallRating>
               </WriteRevHeader>
-              <div name="RadioSection" className="RadioSection">
+              <div name="RadioSection" className="radioSection">
                 <Radio name="Radio">
                   <AttributeContainer name="AttributeContainer">Size:</AttributeContainer>
                   <RadioButtons>
                     <span className="radioButton" name="randomTest">
                       <input type="radio" name="size" value="1" id="runsSmall" onChange={this.handleClick} />
                     &nbsp; Runs Small
-                  </span>
+                    </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
                       <input type="radio" name="size" id="justRight" value="2" onChange={this.handleClick} />
                     &nbsp; Just Right
-                  </span>
+                    </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
                       <input type="radio" name="size" id="runsBig" value="3" onChange={this.handleClick} />
                     &nbsp; Runs Big
-                  </span>
+                    </span>
                   </RadioButtons>
                 </Radio>
                 <Radio name="Radio">
@@ -259,19 +259,19 @@ class AddReview extends React.Component {
                     <span className="radioButton">
                       <input type="radio" name="comfort" id="uncomfortable" value="1" onChange={this.handleClick} />
                     &nbsp; Uncomfortable
-                  </span>
+                    </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
                       <input type="radio" name="comfort" id="comfortAverage" value="2" onChange={this.handleClick} />
                     &nbsp; Average
-                  </span>
+                    </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
                       <input type="radio" name="comfort" id="veryComfortable" value="3" onChange={this.handleClick} />
                     &nbsp; Very Comfortable
-                  </span>
+                    </span>
                   </RadioButtons>
                 </Radio>
                 <Radio name="Radio">
@@ -280,19 +280,19 @@ class AddReview extends React.Component {
                     <span className="radioButton">
                       <input type="radio" name="durability" id="notDurable" value="1" onChange={this.handleClick} />
                     &nbsp; Not Durable
-                  </span>
+                    </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
                       <input type="radio" name="durability" id="durableAverage" value="2" onChange={this.handleClick} />
                     &nbsp; Average
-                  </span>
+                    </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
                       <input type="radio" name="durability" id="veryDurable" value="3" onChange={this.handleClick} />
                     &nbsp; Very Durable
-                  </span>
+                    </span>
                   </RadioButtons>
                 </Radio>
               </div>

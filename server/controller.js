@@ -10,6 +10,15 @@ const controller = {
         res.status(400).send(err);
       });
   },
+  getUser: (req, res) => {
+    models.getUser(req.body)
+      .then((results) => {
+        res.status(200).send(results);
+      })
+      .catch((err) => {
+        res.status(400).send(err);
+      });
+  },
   getRecent: (req, res) => {
     models.getRecent()
       .then((results) => {

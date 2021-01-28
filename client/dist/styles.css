@@ -639,6 +639,16 @@ margin: 0 auto;
 max-width: 1000px;
 }
 
+.ReviewSummary1{
+  background: transparent;
+  border: 0;
+  padding: 20px 0 0;
+  margin: 10 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
 .reviewStars{
 position: relative;
 top: 23px;
@@ -744,7 +754,7 @@ ADDREVIEWS SECTION
 }
 
 .star1 {
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
   cursor: none;
 }
 
@@ -768,9 +778,9 @@ ADDREVIEWS SECTION
 
 }
 .radioSection {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 .reviewInput {
   border-bottom: 1px solid #F1F1F1;

@@ -9,6 +9,10 @@ const models = {
     Reviews.find().sort({ _id: -1 }).limit(3)
   ),
 
+  getUser: (id) => (
+    Reviews.find({ _id: id })
+  ),
+
   getRecent10: () => (
     Reviews.find().sort({ _id: -1 }).limit(10)
   ),
@@ -18,11 +22,11 @@ const models = {
   ),
 
   getHighest10: () => (
-    Reviews.find().sort({ upvote: -1 }).limit(10)
+    Reviews.find().sort({ overallRating: -1 }).limit(10)
   ),
 
   getLowest10: () => (
-    Reviews.find().sort({ downvote: -1 }).limit(10)
+    Reviews.find().sort({ overallRating: +1 }).limit(10)
   ),
 
   addReview: (review) => (
