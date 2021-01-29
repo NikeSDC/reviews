@@ -142,6 +142,53 @@ END OF STYLING FOR PARENT DIV
 START OF STYLING FOR REVIEWS DIV
 */
 
+.css-15oagn2 {
+  width: 100%;
+}
+
+.accordionTitle {
+  color: #111111;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.css-1y5ubft {
+  box-shadow: inset 0 1px 0 0 #E5E5E5;
+  padding: 28px 0px;
+  background: transparent;
+  width: 100%;
+  height: 30%;
+  outline: none;
+  border-radius: 0px;
+  display: flex;
+  cursor: pointer;
+}
+
+.accordionCont1 {
+  width: 60%;
+  line-height: 1.2;
+}
+
+.accordionCont2 {
+  width: 25%;
+  position: relative;
+  top: 40%;
+}
+
+.accordionCont3 {
+  width: 15%;
+  transform: scale(0.1);
+  line-height: 1.2;
+}
+
+.reviewDropdown {
+  height: 6em;
+  width: 7em;
+  position: fixed;
+}
+
 .startingPage {
   margin-top: 12px;
   padding-top: 48px;
@@ -182,6 +229,11 @@ div {
   box-sizing: border-box;
 }
 
+#shippingHyperlink {
+  color: black;
+  text-decoration: underline;
+  font-weight: 500;
+}
 /*
 END OF STYLING FOR REVIEWS DIV
 */
@@ -227,12 +279,6 @@ button {
   transition: none;
 }
 
-.css-1y5ubft {
-  box-shadow: inset 0 1px 0 0 #E5E5E5;
-  padding: 28px 0px;
-  background: transparent;
-  width: 100%;
-}
 
 button, input[type=button], input[type=reset], input[type=submit] {
   font-size: inherit;
@@ -273,9 +319,7 @@ h3 {
   font-weight: bold;
 }
 
-.css-15oagn2 {
-  min-width: 100%;
-}
+
 
 .css-aguiio {
   min-width: 320px;
@@ -326,6 +370,7 @@ h3 {
 .ncss-col-sm-12 {
   width: 100%;
   display: inline-block;
+  font-family: "Helvetica Neue";
 }
 
 /*
@@ -792,7 +837,7 @@ ADDREVIEWS SECTION
   width: 66.66% !important;
   float: left;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
   white-space:pre-line;
   position:relative;
   top: -10px;
@@ -811,6 +856,7 @@ ADDREVIEWS SECTION
   margin-bottom: 2px;
   border-radius: 2px !important;
   color:black;
+  outline: none;
 }
 .submitReview {
   background: #000;
@@ -834,9 +880,8 @@ ADDREVIEWS SECTION
   border-radius: 0;
   font-family: "Helvetica Neue";
 }
-.writeReviewButton :hover {
-  box-shadow: inset 0 10px 0 0 #111;
-  color: red;
+.writeReviewButton:hover {
+  box-shadow: inset 0 -2px 0 0 #111;
 }
 .upvoteArrow  {
   font-size: 20px;

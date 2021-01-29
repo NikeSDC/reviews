@@ -91,7 +91,7 @@ class ReviewInstance extends React.Component {
             </div>
             <ReviewContainer2>
             </ReviewContainer2>
-          <Comments style={{fontFamily: "Helvetica Neue"}}>{this.props.reviews.reviewTitle}</Comments>
+          <Comments style={{fontFamily: "Helvetica Neue"}}>{this.props.reviews.review}</Comments>
         </ReviewContainer2>
       </ReviewContainer1>
     );

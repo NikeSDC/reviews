@@ -19,40 +19,14 @@ class ReviewsModal extends React.Component {
       totalComfort: this.props.state.totalComfort,
       totalDurability: this.props.state.totalDurability,
     };
-    // this.getMostRecent = this.getMostRecent.bind(this);
-    // this.getData = this.getData.bind(this);
-    // this.getAggregates = this.getAggregates.bind(this);
+
+    this.closePage = this.closePage.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.getMostRecent();
-  // }
-
-  // getMostRecent() {
-  //   axios.get('/api/reviews/recent10')
-  //     .then((res) => {
-  //       this.setState({
-  //         reviews: res.data,
-  //       });
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
-
-  // getData(e) {
-  //   const sort = e.target.value;
-  //   console.log(sort);
-  //   axios.get(`/api/reviews/${sort}`)
-  //     .then((res) => {
-  //       this.setState({
-  //         reviews: res.data,
-  //       });
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
+  closePage () {
+    this.props.moreReviewRender();
+    this.props.getReviews();
+  }
 
   render() {
     const ReviewsPopup = styled.div`
@@ -98,15 +72,6 @@ class ReviewsModal extends React.Component {
     height: 100%;
     display: flex;
     `;
-
-    // const ShoePrice = styled.div`
-    // width: 100%;
-    // max-width: calc(100% - 60px);
-    // padding-right: 28px;
-    // padding-left: 12px;
-    // padding-top: 8px;
-    // display: inline-block;
-    // `;
 
     const Body1 = styled.div`
     flex: 1 1 auto;
@@ -214,19 +179,20 @@ class ReviewsModal extends React.Component {
 
     return (
       <ReviewsPopup>
+        {this.props.state.addReviewsModalClicked ? <AddReview handleClick={this.props.addReviewRender} moreReviewRender={this.props.moreReviewRender} /> : ''}
         <Header>
           <ShoeHeader>
             <div style={{ display: 'block' }}>
               <ShoeContainer>
                 <img src="https://static.nike.com/a/images/t_default/a011143b-3f77-40be-a425-d6e8b64c2006/lebron-18-basketball-shoe-M6DgN2.jpg" className="shoeImage" alt="Lebron 18 header" />
                 <div className="shoePrice">
-                  <h1>Lebron 18</h1>
-                  <div style={{ marginBottom: '-4px', color: '#111111' }}>$200</div>
+                  <h1 style={{marginTop: '3px'}}>Lebron 18</h1>
+                  <div style={{ marginBottom: '-4px', color: '#111111', marginTop: '7px' }}>$200</div>
                 </div>
               </ShoeContainer>
             </div>
           </ShoeHeader>
-          <button type="button" onClick={this.props.moreReviewRender} style={{ outline: 0, position: 'absolute', top: '12px', right: '12px', paddingTop: '16px', zIndex: 10, background: '#fff' }}>
+          <button type="button" onClick={this.closePage} style={{ outline: 0, position: 'absolute', top: '12px', right: '12px', paddingTop: '16px', zIndex: 10, background: '#fff', color: '#58595b', fontSize: '18px' }}>
             <AiOutlineClose />
           </button>
         </Header>
@@ -278,7 +244,6 @@ class ReviewsModal extends React.Component {
             <UserReviewList reviews={this.state.reviews} />
           </Body2>
         </Body1>
-        {this.props.state.addReviewsModalClicked ? <AddReview handleClick={this.props.addReviewRender} moreReviewRender={this.props.moreReviewRender} /> : ''}
       </ReviewsPopup>
     );
   }
