@@ -13,40 +13,34 @@ class Shipping extends React.Component {
 
   toggleAccordion(e) {
     this.setState({ active: !this.state.active });
-    // console.log(this.state.active)
   }
 
   render() {
-    const buttonStyle = {
-      "outline": "none",
-      "borderRadius": "0px",
-      "position": "relative",
-      'display': 'flex',
-    };
     const isClicked = this.state.active;
     let shipping;
 
     if (isClicked) {
       shipping = <div className="ncss-col-sm-12 pb8-sm prl1-sm" id="accordion-panel-1">
-        <span className="exp-pdp-promo-message-text">
-          Free standard shipping and free 60-day returns for Nike Members.
-                    <u><a href="https://www.nike.com/help/a/free-shipping"> Learn more. </a></u><br></br>
-          <u><a href="https://www.nike.com/help/a/return-exceptions">Return policy exclusions apply</a></u>
+        <span>
+          Free standard shipping and free 60-day returns for Nike Members. &nbsp;
+                    <a href="https://www.nike.com/help/a/free-shipping" id="shippingHyperlink">Learn more. </a><br></br>
+          <a href="https://www.nike.com/help/a/return-exceptions" id="shippingHyperlink">Return policy exclusions apply</a>
         </span><br></br>
-        <u><a href="https://www.nike.com/help/a/store-pickup">Pick-up available at select Nike Stores.</a></u>
+        <a href="https://www.nike.com/help/a/store-pickup" id="shippingHyperlink">Pick-up available at select Nike Stores.</a>
       </div>
     }
     return (
       <div>
         <div className="css-15oagn2">
-          <button type="button" className="css-1y5ubft panel-controls" style={buttonStyle} onClick={this.toggleAccordion}>
-            <div className="ncss-col-sm-10 css-17y0hnb">
-              <h3 className="css-nofngn">Free Shipping &amp; Returns</h3>
+          <div className="css-1y5ubft" onClick={this.toggleAccordion}>
+            <div className="accordionCont1" style={{width: "85%"}} >
+
+              <h3 className="accordionTitle">Free Shipping &amp; Returns</h3>
             </div>
-            <div className="ncss-col-sm-2 css-7eklhh">
-              <span><Chevron /></span>
+            <div className="accordionCont3" style={{ width: "15%" }}>
+              <span><Chevron className="reviewDropdown" /></span>
             </div>
-          </button>
+          </div>
           <div>
             {shipping}
           </div>

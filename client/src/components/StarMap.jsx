@@ -8,7 +8,7 @@ import Stars from './Stars.jsx';
 const StarMap = (props) => (
 
   (
-    <div style={{ display: 'flex', flexDirection: 'rows', width: 'fit-content' }}>
+    <div className={props.className ? props.className : ""} style={{ display: 'flex', flexDirection: 'rows', width: 'fit-content' }}>
 
       <div className="star1">
         <Stars

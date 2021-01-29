@@ -16,7 +16,6 @@ class Reviews extends React.Component {
       numberOfReviews: null,
       isClicked: false,
       totalRatings: 0,
-      hovered: false,
       moreReviewsModalClicked: false,
       addReviewsModalClicked: false,
       totalSize: 0,
@@ -65,7 +64,6 @@ class Reviews extends React.Component {
 
   getData(e) {
     const sort = e.target.value;
-    console.log(sort);
     axios.get(`/api/reviews/${sort}`)
       .then((res) => {
         this.setState({
@@ -84,9 +82,9 @@ class Reviews extends React.Component {
     const length = data.length;
 
     data.forEach((review) => {
-      size += (review.size / 3);
-      comfort += (review.comfort / 3);
-      durability += (review.durability / 3);
+      size += (review.size / 2);
+      comfort += (review.comfort / 2);
+      durability += (review.durability / 2);
     });
 
     const totalSize = (size / length) * 100;
@@ -111,7 +109,7 @@ class Reviews extends React.Component {
   addReviews() {
     this.setState({
       addReviewsModalClicked: !this.state.addReviewsModalClicked,
-    }, this.getReviews())
+    }, this.getReviews());
   }
 
   // this will add a setTimeout so that addReviews appears a second after displaying more reviews
@@ -126,13 +124,6 @@ class Reviews extends React.Component {
   }
 
   render() {
-    const buttonStyle = {
-      outline: 'none',
-      borderRadius: '0px',
-      position: 'relative',
-      display: 'flex',
-    };
-
     const ReviewsContainer1 = styled.div`
       padding-top: 20px;
       `;
@@ -183,10 +174,10 @@ class Reviews extends React.Component {
     vertical-align: baseline;
     cursor: pointer;
     padding-bottom: 4px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px black;
     border-radius: unset;
     font-family: "Helvetica Neue";
-    font-weight: bold;
+    font-weight: 500;
     `;
 
     const WriteReviewButton = styled.a`
@@ -203,12 +194,6 @@ class Reviews extends React.Component {
     outline-width: ${() => { this.state.hovered === true ? '0px' : 'none' }}
     color: ${() => { this.state.hovered === true ? 'red' : 'black' }}
     `;
-
-    // const OnHover = {
-    //   'outline-color': 'initial',
-    //   'outline-style': 'initial',
-    //   'outline-width': '0px',
-    // };
 
     const { isClicked } = this.state;
     let reviews;
@@ -227,13 +212,13 @@ class Reviews extends React.Component {
             </StarRating>
               </div>
               <p>
-                <WriteReviewButton className="writeReviewButton" onMouseEnter={() => { this.setState({ hovered: true }) }} onMouseLeave={() => { this.setState({ hovered: false }) }} onClick={this.addReviews}>
+                <WriteReviewButton className="writeReviewButton" onClick={this.addReviews}>
                   Write a Review
               </WriteReviewButton>
               </p>
-              {this.state.addReviewsModalClicked ? <ReviewsModal addReviewRender={this.addReviews} moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} getData={this.getData}/> : ''}
+              {this.state.addReviewsModalClicked ? <ReviewsModal addReviewRender={this.addReviews} moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} getData={this.getData} /> : ''}
               <ReviewList reviews={this.state.recentReviews} getReviews={this.getReviews} />
-              <MoreReviews onClick={this.moreReviews} name="moreReviewsModalClicked">More Reviews</MoreReviews>
+              <MoreReviews onClick={this.moreReviews} name="moreReviewsModalClicked" className="writeReviewButton">More Reviews</MoreReviews>
               {this.state.moreReviewsModalClicked === true ? <ReviewsModal
                 moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} getData={this.getData} /> : ''}
             </ProductReview>
@@ -244,22 +229,29 @@ class Reviews extends React.Component {
 
     return (
       <div className="css-15oagn2">
-        <button type="button" className="css-1y5ubft" style={buttonStyle} onClick={this.toggleAccordion}>
-          <div className="ncss-col-sm-7 css-17y0hnb">
-            <h3 className="css-nofngn">
+
+        <div className="css-1y5ubft" onClick={this.toggleAccordion}>
+
+          <div className="accordionCont1">
+
+            <h3 className="accordionTitle">
               Reviews ({this.state.numberOfReviews})
             </h3>
+
           </div>
-          <div className="ncss-col-sm-5 css-7eklhh">
-            <span className="text-color-primary-dark css-1fpb7q0">
-              <StarMap ratings={this.state.totalRatings} />
-            </span>
+
+          <div className="accordionCont2" style={{position: 'relative', top: '30%'}}>
+              <StarMap ratings={this.state.totalRatings} style={{position: 'relative', top: '30%'}} className="accordionCont2" />
           </div>
-          <div className="ncss-col-sm-2 css-7eklhh">
-            <span><Chevron /></span>
+
+          <div className="accordionCont3">
+            <span name="dropdown" className="reviewDropdown"><Chevron className="reviewDropdown" /></span>
           </div>
-        </button>
+
+        </div>
+
         {reviews}
+
       </div>
     );
   }

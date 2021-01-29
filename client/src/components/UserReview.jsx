@@ -140,9 +140,9 @@ class UserReview extends React.Component {
     `;
 
     const review = this.props.reviews;
-    const userSize = (review.size / 3) * 100;
-    const userComfort = (review.comfort / 3) * 100;
-    const userDurability = (review.durability / 3) * 100;
+    const userSize = (review.size / 2) * 100;
+    const userComfort = (review.comfort / 2) * 100;
+    const userDurability = (review.durability / 2) * 100;
 
     return (
       <ReviewContainer>

@@ -1,13 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { IoStar } from 'react-icons/io5';
-import { IoStarHalf } from 'react-icons/io5';
-import { IoStarOutline } from 'react-icons/io5';
 import styled from 'styled-components';
-import ReviewInstance from './ReviewInstance.jsx'
-import ReviewsModal from './ReviewsModal.jsx';
 import { AiOutlineClose } from 'react-icons/ai';
-import Star from './Star.jsx';
 import Countries from './Countries.jsx';
 import States from './States.jsx';
 import ReviewStars from './ReviewStars.jsx';
@@ -33,7 +27,6 @@ class AddReview extends React.Component {
       upvote: 0,
       downvote: 0,
     };
-    this.renderStars = this.renderStars.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -41,16 +34,13 @@ class AddReview extends React.Component {
   }
 
   handleChange(e) {
-    e.preventDefault();
     const target = e.target.id;
-    const value = e.target.value;
-
+    const { value } = e.target;
     this.state[target] = value;
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state)
     axios.post('/api/reviews', this.state)
       .then(alert('Thanks for your feedback'))
       .then(this.props.handleClick)
@@ -62,23 +52,10 @@ class AddReview extends React.Component {
   }
 
   handleClick(e) {
-    e.preventDefault();
-    const value = e.target.value;
+    const { value } = e.target;
     const target = e.target.name;
 
     this.state[target] = value;
-  }
-
-  renderStars() {
-    return (
-      <span className="starFill">
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-      </span>
-    )
   }
 
   render() {
@@ -202,6 +179,7 @@ class AddReview extends React.Component {
     border-radius: 2px !important;
     color: #black;
     type: text;
+    outline: none;
     `;
 
     return (
@@ -209,7 +187,7 @@ class AddReview extends React.Component {
         <div className="addReviewModal">
           <Header name="Header">
             <button type="button" onClick={this.props.moreReviewRender} style={{ outline: 0, position: 'absolute', top: '12px', right: '12px', paddingTop: '16px', zIndex: 10, background: '#fff' }}>
-              <AiOutlineClose size={17} color={'#58595b'} fontWeight={'bold'} onClick={this.props.handleClick} />
+              <AiOutlineClose name="OutlineClose" size={17} color={'#58595b'} fontWeight={'bold'} onClick={this.props.handleClick} />
             </button>
           </Header>
           <Outline1 name="Outline1">
@@ -236,19 +214,19 @@ class AddReview extends React.Component {
                   <AttributeContainer name="AttributeContainer">Size:</AttributeContainer>
                   <RadioButtons>
                     <span className="radioButton" name="randomTest">
-                      <input type="radio" name="size" value="1" id="runsSmall" onChange={this.handleClick} />
+                      <input type="radio" name="size" value="0" id="runsSmall" onChange={this.handleClick} />
                     &nbsp; Runs Small
                     </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="size" id="justRight" value="2" onChange={this.handleClick} />
+                      <input type="radio" name="size" id="justRight" value="1" onChange={this.handleClick} />
                     &nbsp; Just Right
                     </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="size" id="runsBig" value="3" onChange={this.handleClick} />
+                      <input type="radio" name="size" id="runsBig" value="2" onChange={this.handleClick} />
                     &nbsp; Runs Big
                     </span>
                   </RadioButtons>
@@ -257,19 +235,19 @@ class AddReview extends React.Component {
                   <AttributeContainer name="AttributeContainerComfort">Comfort:</AttributeContainer>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="comfort" id="uncomfortable" value="1" onChange={this.handleClick} />
+                      <input type="radio" name="comfort" id="uncomfortable" value="0" onChange={this.handleClick} />
                     &nbsp; Uncomfortable
                     </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="comfort" id="comfortAverage" value="2" onChange={this.handleClick} />
+                      <input type="radio" name="comfort" id="comfortAverage" value="1" onChange={this.handleClick} />
                     &nbsp; Average
                     </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="comfort" id="veryComfortable" value="3" onChange={this.handleClick} />
+                      <input type="radio" name="comfort" id="veryComfortable" value="2" onChange={this.handleClick} />
                     &nbsp; Very Comfortable
                     </span>
                   </RadioButtons>
@@ -278,19 +256,19 @@ class AddReview extends React.Component {
                   <AttributeContainer name="AttributeContainerDurability">Durability:</AttributeContainer>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="durability" id="notDurable" value="1" onChange={this.handleClick} />
+                      <input type="radio" name="durability" id="notDurable" value="0" onChange={this.handleClick} />
                     &nbsp; Not Durable
                     </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="durability" id="durableAverage" value="2" onChange={this.handleClick} />
+                      <input type="radio" name="durability" id="durableAverage" value="1" onChange={this.handleClick} />
                     &nbsp; Average
                     </span>
                   </RadioButtons>
                   <RadioButtons>
                     <span className="radioButton">
-                      <input type="radio" name="durability" id="veryDurable" value="3" onChange={this.handleClick} />
+                      <input type="radio" name="durability" id="veryDurable" value="2" onChange={this.handleClick} />
                     &nbsp; Very Durable
                     </span>
                   </RadioButtons>

@@ -4,7 +4,7 @@ import React from "react";
 function Star(props) {
 
   return (
-    <a href="none" onClick={(event) => {event.preventDefault(), console.log('hello')}} name={"tester"} value="1">
+    <a href="none" onClick={(event) => {event.preventDefault()}} name={"tester"} value="1">
       <svg
       id = "tester"
         height="1em"
