@@ -144,23 +144,6 @@ class Reviews extends React.Component {
       font-family: "Helvetica Neue";
     `;
 
-    //   outline: 0;
-    //   padding: 0px;
-    // border-radius: unset;
-    // background: #fff;
-    // color: #111;
-    // display: inline-block;
-    // vertical-align: top;
-    // white-space: nowrap;
-    // text-align: center;
-    // text-decoration: none;
-    // font-weight: 500;
-    // font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    // font-size: 16px;
-    // line-height: 1.5;
-    // cursor: pointer;
-    // transition: all .2s ease;
-
     const MoreReviews = styled.a`
     background: #fff;
     white-space: nowrap;
@@ -216,7 +199,9 @@ class Reviews extends React.Component {
                   Write a Review
               </WriteReviewButton>
               </p>
+
               {this.state.addReviewsModalClicked ? <ReviewsModal addReviewRender={this.addReviews} moreReviewRender={this.moreReviews} state={this.state} getReviews={this.getReviews} getData={this.getData} /> : ''}
+
               <ReviewList reviews={this.state.recentReviews} getReviews={this.getReviews} />
               <MoreReviews onClick={this.moreReviews} name="moreReviewsModalClicked" className="writeReviewButton">More Reviews</MoreReviews>
               {this.state.moreReviewsModalClicked === true ? <ReviewsModal

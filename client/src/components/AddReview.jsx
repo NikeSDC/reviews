@@ -289,7 +289,7 @@ class AddReview extends React.Component {
                     </TextBox>
                   </div>
                 </ReviewInput>
-                <ReviewInput>
+                <ReviewInput style={{marginBottom: '37px'}}>
                   <Title>Review<span style={{ color: 'red' }}>*</span></Title>
                   <div className="reviewTextField">
                     <TextBox id="review" onChange={this.handleChange} style={{ height: '112px', minHeight: '112px', resize: 'vertical' }} placeholder="Write your review here. It must be at least 5 characters long. Consider whether you would recommend this product and what you like or dislike about it.">
@@ -297,7 +297,7 @@ class AddReview extends React.Component {
                   </div>
                 </ReviewInput>
               </div>
-              <div className="reviewInput" style={{ borderBottom: 'none' }}>
+              <div className="reviewInput" style={{ borderBottom: 'none', marginTop: '20px' }}>
                 <ReviewInput>
                   <Title>Country/Region:</Title>
                   <div className="reviewTextField" id="country" onChange={this.handleChange}>
