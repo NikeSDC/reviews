@@ -1,0 +1,3540 @@
+Oklahoma City (OK)
+Olathe(KS)
+Omaha(NE)
+Ontario(CA)
+Orange(CA)
+Orlando(FL)
+Overland Park(KS)
+Oxnard(CA)
+Palm Bay City(FL)
+Palmdale(CA)
+Pasadena(CA)
+Pasadena(TX)
+Paterson(NJ)
+Pearland(TX)
+Pembroke Pines(FL)
+Peoria(AZ)
+Peoria(IL)
+Philadelphia(PA)
+Phoenix(AZ)
+Pittsburgh(PA)
+Plano(TX)
+Pomona(CA)
+Pompano Beach(FL)
+Port St.Lucie(FL)
+Portland(OR)
+Providence(RI)
+Provo(UT)
+Pueblo(CO)
+Raleigh(NC)
+Rancho Cucamonga(CA)
+Reno(NV)
+Renton(WA)
+Rialto(CA)
+Richardson(TX)
+Richmond(CA)
+Richmond(VA)
+Riverside(CA)
+Rochester(MN)
+Rochester(NY)
+Rockford(IL)
+Roseville(CA)
+Round Rock(TX)
+Sacramento(CA)
+Salem(OR)
+Salinas(CA)
+Salt Lake City(UT)
+San Angelo(TX)
+San Antonio(TX)
+San Bernardino(CA)
+San Buenaventura(CA)
+San Diego(CA)
+San Francisco(CA)
+San Jose(CA)
+San Mateo(CA)
+Sandy Springs(GA)
+Santa Ana(CA)
+Santa Clara(CA)
+Santa Clarita(CA)
+Santa Maria(CA)
+Santa Rosa(CA)
+Savannah(GA)
+Scottsdale(AZ)
+Seattle(WA)
+Burbank (CA)
+Buffalo (NY)
+Cambridge (MA)
+Cape Coral (FL)
+Carlsbad (CA)
+Carrollton (TX)
+Cary (NC)
+Cedar Rapids (IA)
+Centennial (CO)
+Chandler (AZ)
+Charleston (SC)
+Charlotte (NC)
+Chattanooga (TN)
+Chesapeake (VA)
+Chicago (IL)
+Chula Vista (CA)
+Cincinnati (OH)
+Clarksville (TN)
+Clearwater (FL)
+Cleveland (OH)
+Clovis (CA)
+College Station (TX)
+Colorado Springs (CO)
+Columbia (MO)
+Columbia (SC)
+Columbus (GA)
+Columbus (OH)
+Concord (CA)
+Coral Springs (FL)
+Corona (CA)
+Corpus Christi (TX)
+Costa Mesa (CA)
+Dallas (TX)
+Daly City (CA)
+Davenport (IA)
+Davie (FL)
+Dayton (OH)
+Denton (TX)
+Denver (CO)
+Des Moines (IA)
+Detroit (MI)
+Downey (CA)
+Durham (NC)
+El Cajon (CA)
+El Monte (CA)
+El Paso (TX)
+Elgin (IL)
+Elizabeth (NJ)
+Elk Grove (CA)
+Escondido (CA)
+Eugene (OR)
+Evansville (IN)
+Everett (WA)
+Fairfield (CA)
+Fargo (ND)
+Fayetteville (NC)
+Fontana (CA)
+Fort Collins (CO)
+Fort Lauderdale (FL)
+Fort Worth (TX)
+Fremont (CA)
+Fresno (CA)
+Frisco (TX)
+Fullerton (CA)
+Gainesville (FL)
+Garden Grove (CA)
+Garland (TX)
+Gilbert (AZ)
+Glendale (AZ)
+Glendale (CA)
+Grand Prairie (TX)
+Grand Rapids (MI)
+Greeley (CO)
+Green Bay (WI)
+Greensboro (NC)
+Gresham (OR)
+Hampton (VA)
+Hartford (CT)
+Hayward (CA)
+Henderson (NV)
+Hialeah (FL)
+High Point City (NC)
+Hillsboro (OR)
+Hollywood (FL)
+Houston (TX)
+Huntington Beach (CA)
+Huntsville (AL)
+Independence (MO)
+Indianapolis (IN)
+Inglewood (CA)
+Irvine (CA)
+Irving (TX)
+Jackson (MS)
+Jacksonville (FL)
+Jersey City (NJ)
+Joliet (IL)
+Jurupa Valley (CA)
+Kansas City (KS)
+Kansas City (MO)
+Kent (WA)
+Killeen (TX)
+Knoxville (TN)
+Lafayette (LA)
+Lakeland (FL)
+Lakewood (CO)
+Lancaster (CA)
+Lansing (MI)
+Laredo (TX)
+Las Cruces (NM)
+Las Vegas (NV)
+League City (TX)
+Lewisville (TX)
+Lexington-Fayette (KY)
+Lincoln (NE)
+Little Rock (AR)
+Long Beach (CA)
+Los Angeles (CA)
+Louisville (KY)
+Lowell (MA)
+Lubbock (TX)
+Macon-Bibb (GA)
+Madison (WI)
+Manchester (NH)
+McAllen (TX)
+McKinney City (TX)
+Memphis (TN)
+Mesa (AZ)
+Mesquite (TX)
+Miami (FL)
+Miami Gardens (FL)
+Midland City (TX)
+Milwaukee (WI)
+Minneapolis (MN)
+Miramar (FL)
+Mobile (AL)
+Modesto (CA)
+Montgomery (AL)
+Moreno Valley (CA)
+Murfreesboro (TN)
+Murrieta (CA)
+Naperville (IL)
+Nashville-Davidson (TN)
+New Haven (CT)
+New Orleans (LA)
+New York (NY)
+Newark (NJ)
+Newport News (VA)
+Norfolk (VA)
+Norman (OK)
+North Charleston (SC)
+North Las Vegas (NV)
+Norwalk (CA)
+Oakland (CA)
+Oceanside (CA)
+Odessa (TX)
+Oklahoma City (OK)
+Olathe (KS)
+Omaha (NE)
+Ontario (CA)
+Orange (CA)
+Orlando (FL)
+Overland Park (KS)
+Oxnard (CA)
+Palm Bay City (FL)
+Palmdale (CA)
+Pasadena (CA)
+Pasadena (TX)
+Paterson (NJ)
+Pearland (TX)
+Pembroke Pines (FL)
+Peoria (AZ)
+Peoria (IL)
+Philadelphia (PA)
+Phoenix (AZ)
+Pittsburgh (PA)
+Plano (TX)
+Pomona (CA)
+Pompano Beach (FL)
+Port St. Lucie (FL)
+Portland (OR)
+Providence (RI)
+Provo (UT)
+Pueblo (CO)
+Raleigh (NC)
+Rancho Cucamonga (CA)
+Reno (NV)
+Renton (WA)
+Rialto (CA)
+Richardson (TX)
+Richmond (CA)
+Richmond (VA)
+Riverside (CA)
+Rochester (MN)
+Rochester (NY)
+Rockford (IL)
+Roseville (CA)
+Round Rock (TX)
+Sacramento (CA)
+Salem (OR)
+Salinas (CA)
+Salt Lake City (UT)
+San Angelo (TX)
+San Antonio (TX)
+San Bernardino (CA)
+San Buenaventura (CA)
+San Diego (CA)
+San Francisco (CA)
+San Jose (CA)
+San Mateo (CA)
+Sandy Springs (GA)
+Santa Ana (CA)
+Santa Clara (CA)
+Santa Clarita (CA)
+Santa Maria (CA)
+Santa Rosa (CA)
+Savannah (GA)
+Scottsdale (AZ)
+Seattle (WA)
+Shreveport (LA)
+Simi Valley (CA)
+Sioux Falls (SD)
+South Bend (IN)
+Spokane (WA)
+Springfield (IL)
+Springfield (MA)
+Springfield (MO)
+St. Louis (MO)
+St. Paul (MN)
+St. Petersburg (FL)
+Stamford (CT)
+Sterling Heights (MI)
+Stockton (CA)
+Sunnyvale (CA)
+Surprise (AZ)
+Syracuse (NY)
+Tacoma (WA)
+Tallahassee (FL)
+Tampa (FL)
+Temecula (CA)
+Tempe (AZ)
+Thornton (CO)
+Thousand Oaks (CA)
+Toledo (OH)
+Topeka (KS)
+Torrance (CA)
+Tucson (AZ)
+Tulsa (OK)
+Tyler (TX)
+Urban Honolulu (HI)
+Vallejo (CA)
+Vancouver (WA)
+Victorville City (CA)
+Virginia Beach (VA)
+Visalia (CA)
+Vista (CA)
+Waco (TX)
+Warren (MI)
+WASHINGTON (DC)
+Waterbury (CT)
+West Covina (CA)
+West Jordan (UT)
+West Palm Beach (FL)
+West Valley City (UT)
+Westminster (CO)
+Wichita (KS)
+Wichita Falls (TX)
+Wilmington (NC)
+Winston-Salem (NC)
+Worcester (MA)
+Yonkers (NY)
+CHARLOTTE AMALIE
+Bahía Blanca-Cerri
+Bariloche
+BUENOS AIRES
+Catamarca
+Comodoro Rivadavia-Rada Tilly
+Concordia
+Córdoba
+Corrientes
+Formosa
+La Plata
+La Rioja
+Mar del Plata-Batán
+Mendoza
+Neuquén-Plottier
+Paraná
+Posadas
+Rawson-Trelew-Playa Unión
+Resistencia
+Río Cuarto
+Rio Gallegos
+Rosario
+Salta
+San Juan
+San Luis - El Chorrillo
+San Nicolás-Villa Constitución
+San Salvador de Jujuy-Palpalá
+Santa Fé
+Santa Rosa-Toay
+Santiago del Estero-La Banda
+Tucumán-Tafí Viejo
+Ushuaia-Río Grande
+Cochabamba
+El Alto
+LA PAZ
+Oruro
+Potosí
+Sacaba
+Santa Cruz
+SUCRE
+Tarija
+Yacuiba
+Abaeteluba
+Açailândia
+Aguas Lindas de Goiás
+Alagoinhas
+Almirante Tamandaré
+Altamira
+Alvorada
+Americana
+Ananindeua
+Anápolis
+Angra dos Reis
+Aparecida de Goiania
+Apucarana
+Aracaju
+Araçatuba
+Araguaina
+Araguario
+Arapiraca
+Arapongas
+Araraquara
+Araras
+Araruama
+Araucária
+Araxá
+Ariquemes
+Assis
+Atibaia
+Bacabal
+Bagé
+Balneário Camboriú
+Barbacena
+Barcarena
+Barra Mansa
+Barreiras
+Barretos
+Barueri
+Bauru
+Belém
+Belford Roxo
+Belo Horizonte
+Bento Gonçalves
+Betim
+Birigui
+Blumenou
+Boa Vista
+Botucatu
+Bragança
+Bragança Paulista
+BRASILIA
+Brusque
+Cabo de Santo Agostinho
+Cabo Frio
+Cachoeirinha
+Cachoeiro de Itapemirim
+Camacari
+Camaragibe
+Cambé
+Cametá
+Campina Grande
+Campinas
+Campo Grande
+Campo Largo
+Campos dos Goytacazes
+Canoas
+Caraguatatuba
+Carapicuíba
+Cariacica
+Caruaru
+Cascavel
+Castanhal
+Catalão
+Catanduva
+Caucaia
+Caxias
+Caxias do Sul
+Chapecó
+Codo
+Colatina
+Colombo
+Conselheiro Lafaiete
+Contagem
+Coronel Fabriciano
+Corumbá
+Cotia
+Crato
+Criciúma
+Cubatao
+Cuiabá
+Curitiba
+Diadema
+Divinópolis
+Dourados
+Duque de Caxias
+Embu
+Erechim
+Eunápolis
+Feira de Santana
+Ferraz de Vasconcelos
+Florianópolis
+Formosa
+Fortaleza
+Foz do Iguaçu
+Franca
+Francisco Morato
+Franco da Rocha
+Garanhuns
+Goiânia
+Governador Valadares
+Gravatai
+Guarapari
+Guarapuava
+Guaratinguetá
+Guarujá
+Guarulhos
+Hortolandia
+Ibirité
+Igarassu
+Iguatu
+Ilhéus
+Imperatriz
+Indaiatuba
+Ipatinga
+Itabiraí
+Itaboraí
+Itabuna
+Itaguaí
+Itajaí
+Itapecerica da Serra
+Itapetininga
+Itapevi
+Itapipoca
+Itaquaquecetuba
+Itatiba
+Itu
+Ituiutaba
+Itumbiara
+Jaboatao dos Guarapes
+Jacareí
+Jandira
+Japeri
+Jaraguá do Sul
+Jaú
+Jequié
+Ji-Paraná
+Joao Pessoa
+Joinville
+Juazeiro
+Juàzeiro do Norte
+Juiz de Fora
+Jundiaí
+Lagarto
+Lages
+Lauro de Freitas
+Lavras
+Leme
+Limeira
+Linhares
+Londrina
+Luziânia
+Macae
+Macapá
+Maceió
+Magé
+Manaus
+Maraba
+Maracanau
+Maranguape
+Maricá
+Marília
+Maringá
+Marituba
+Mauá
+Mesquita
+Moji das Cruzes
+Moji-Guaçu
+Montes Claros
+Mossoró
+Muriaé
+Natal
+Nilópolis
+Niterói
+Nossa Senhora do Socorro
+Nova Friburgo
+Nova Iguaçu
+Novo Gama
+Nôvo Hamburgo
+Olinda
+Osasco
+Ourinhos
+Paço do Lumiar
+Palhoça
+Palmas
+Paragominas
+Paranaguá
+Parauapebas
+Parintins
+Parnaíba
+Parnamirim
+Passo Fundo
+Passos
+Patos
+Patos de Minas
+Paulínia
+Paulista
+Paulo Afonso
+Pelotas
+Petrolina
+Petrópolis
+Pindamonhangaba
+Pinhais
+Piracicaba
+Piraquara
+Poà
+Poços de Caldas
+Ponta Grossa
+Porto Alegre
+Porto Seguro
+Porto Velho
+Pouso Alegre
+Praia Grande
+Presidente Prudente
+Queimados
+Recife
+Resende
+Ribeirao das Neves
+Ribeirao Pires
+Ribeirao Prêto
+Rio Branco
+Rio Claro
+Rio das Ostras
+Rio de Janeiro
+Rio Grande
+Rio Verde
+Rondonópolis
+Sabára
+Salto
+Salvador
+Santa Bárbara D'Oeste
+Santa Cruz do Capibaribe
+Santa Cruz do Sul
+Santa Luzia (Minas Gerais)
+Santa Maria
+Santa Rita
+Santana
+Santana de Parnaíba
+Santarém
+Santo André
+Santo Antônio de Jesus
+Santos
+Sao Bernardo do Campo
+Sao Caetano do Sul
+Sao Carlo
+São Félix do Xingu
+Sao Gonçalo
+Sao Joao de Meriti
+Sao José
+Sao José de Ribamar
+Sao José do Rio Prêto
+Sao José dos Campos
+Sao José dos Pinhais
+Sao Leopoldo
+São Lourenço da Mata
+Sao Luís
+São Mateus
+Sao Paulo
+Sao Vicente
+Sapucaia do Sul
+Senador Canedo
+Serra
+Sertaozinho
+Sete Lagoas
+Simoes Filho
+Sinop
+Sobral
+Sorocaba
+Sumaré
+Susano
+Taboao da Serra
+Tailândia
+Tatuí
+Taubaté
+Teixeira de Freitas
+Teófilo Otoni
+Teresina
+Teresópolis
+Brazil - Brésil24
+1 VII 2016 (ESDJ)
+Timon
+Toledo
+Três Lagoas
+Trindade
+Tubarão
+Tucuruí
+Ubá
+Uberaba
+Uberlândia
+Umuarama
+Uruguaiana
+Valinhos
+Valparaíso de Goiás
+Varginha
+Varzea Grande
+Varzea Paulista
+Vespasiano
+Viamao
+Vila Velha
+Vitória
+Vitória da Conquista
+Vitória de Santo Antao
+Volta Redonda
+Votorantim
+Alto Hospicio
+Antofagasta
+Arica
+Calama
+Chiguallante
+Chillán
+Concepción
+Copiapó
+Coquimbo
+Coronel
+Curicó
+Iquique
+La Serena
+Los Ángeles
+Osorno
+Puente Alto
+Puerto Montt
+Punta Arenas
+Quilpué
+Rancagua
+San Bernardo
+San Pedro de la Paz
+SANTIAGO
+Talca
+Talcahuano
+Temuco
+Valdivia
+Valparaíso
+Villa Alemana
+Viña del Mar
+Apartadó
+Armenia
+Barrancabermeja
+Barranquilla
+Bello
+BOGOTÁ, D.C
+Bucaramanga
+Buenaventura
+Cali
+Cartagena
+Cartago
+Caucasia
+Chía
+Ciénaga
+Cúcuta
+Dosquebradas
+Duitama
+Envigado
+Facatativá
+Florencia
+Floridablanca
+Fusagasugá
+Girardot
+Girón
+Gudalajara de Buga
+Ibagué
+Ipiales
+Itagüí
+Jamundí
+Lorica
+Magangué
+Maicao
+Malambo
+Manaure
+Manizales
+Medellín
+Montería
+Neiva
+Palmira
+Pasto
+Pereira
+Piedecuesta
+Pitalito
+Popayán
+Quibdo
+Riohacha
+Rionegro
+San Andrés de Tumaco
+Santa Marta
+Sincelejo
+Soacha
+Sogamoso
+Soledad
+Tierralta
+Tuluá
+Tunja
+Turbo
+Uribia
+Valledupar
+Villavicencio
+Yopal
+Yumbo
+Zipaquirá
+Ambato
+Babahoyo
+Cuenca
+Durán
+Esmeraldas
+Guayaquil
+Ibarra
+La Libertad
+Loja
+Machala
+Manta
+Milagro
+Portoviejo
+Quevedo
+QUITO
+Riobamba
+Santo Domingo de los Colorados
+STANLEY
+CAYENNE
+GEORGETOWN
+ASUNCIÓN30
+Capiatá
+Ciudad del Este
+Fernando de la Mora
+Lambaré
+Luque
+San Lorenzo
+Arequipa
+Ayacucho
+Cajamarca
+Chiclayo
+Chimbote
+Chincha Alta
+Cuzco
+Huancayo
+Huánuco
+Huaraz
+Ica
+Iquitos
+Juliaca
+LIMA32
+Pisco
+Piura
+Pucallpa
+Puno
+Sullana
+Tacna
+Tarapoto
+Trujillo
+Tumbes
+PARAMARIBO
+Wanica
+MONTEVIDEO
+Anaco(F) (Capital)
+Barinas
+Barquisimeto
+Baruta
+Cabimas
+Cagua
+CARACAS
+Carora
+Carúpano
+Ciudad Bolívar
+Ciudad Guayana
+Ciudad Ojeda
+Cua
+Cumaná
+El Tigre
+Guacara
+Guanare
+Guarenas
+Guatire
+Los Guayos
+Los Teques
+Maracaibo
+Maracay
+Maturín
+Mérida
+Naguanagua
+Ocumare Del Tuy
+Petare
+Pozuelos (F) (Capital)
+Puerto Cabello
+Punto Fijo
+San Cristóbal
+San Fernando de Apure
+San Francisco
+Santa Lucía
+Táriba
+Tocuyito
+Turmero
+Valencia
+Valera
+Baghalan Center (Puli Khumry)
+Balkh Center (Mazar- Sharif)
+Herat Center
+KABUL CENTER
+Kandhar Center (Kndhar)
+Kunduz Center
+Nngarhar Center (Jlal Abad)
+Gyumri (Leninakan)
+YEREVAN
+BAKU
+Ganja
+Sumgayit
+MANAMA
+Barisal
+Chittagong
+Comilla
+DHAKA
+Khulna
+Mymensingh
+Narayanganj
+Rajshahi
+Saidpur
+THIMPHU
+BANDAR SERI BEGAWAN
+Bat Dambang
+PHNOM PENH
+Seam Reab
+BEIJING (PEKING)
+China, Hong Kong SAR - Chine, Hong Kong RAS
+HONG KONG SAR
+China, Macao SAR - Chine, Macao RAS
+MACAO
+1 I 2006 (ESDJ)
+LEFKOSIA37
+Lemesos38
+Democratic People's Republic of Korea -
+République populaire démocratique de Corée
+Anju
+Chongjin
+Haeju
+Hamhung
+Huichon
+Hyesan
+Jongju
+Kaechon
+Kaesong
+Kanggye
+Kim Chaek
+Kusong
+Nampho
+Phyongsong
+PYONGYANG
+Rason
+Sariwon
+Sinpho
+Sinuiju
+Sunchon
+Tanchon
+Tokchon
+Wonsan
+Batumi
+Kutaisi
+Rustavi
+TBILISI
+Abohar
+Achalpur
+Adilabad
+Adityapur
+Adoni
+Agartala
+Agra
+Ahmadabad
+Ahmadnagar
+Aizawl
+Ajmer
+Akbarpur
+Akola
+Alandur
+Alappuzha
+Aligarh
+Allahabad
+Alwar
+Ambala
+Ambala Sadar
+Ambarnath
+Ambattur
+Ambikapur
+Ambur
+Amravati
+Amreli
+Amritsar
+Amroha
+Anand
+Anantapur
+Anantnag
+Arrah
+Asansol
+Ashoknagar Kalyangarh
+Aurangabad (Bihar)
+Aurangabad (Maharashtra)
+Avadi
+Azamgarh
+Badlapur
+Bagaha
+Bagalkot
+Bahadurgarh
+Baharampur
+Bahraich
+Baidyabati
+Baleshwar Town
+Ballia
+Bally (Census Town)
+Bally (Municipality)
+Balurghat
+Banda
+Bankura
+Bansberia
+Banswara
+Baran
+Baranagar
+Barasat
+Baraut
+Barddhaman
+Bareilly
+Baripada Town
+Barnala
+Barrackpur
+Barshi
+Basirhat
+Basti
+Batala
+Bathinda
+Beawar
+Begusarai
+Belgaum
+Bellary
+Bettiah
+Betul
+Bhadrak
+Bhadravati
+Bhadreswar
+Bhagalpur
+Bhalswa Jahangir Pur
+Bharatpur
+Bharuch
+Bhatpara
+Bhavnagar
+Bhilai Nagar
+Bhilwara
+Bhimavaram
+Bhind
+Bhiwadi
+Bhiwandi
+Bhiwani
+Bhopal
+Bhubaneswar Town
+Bhuj
+Bhusawal
+Bid
+Bidar
+Bidhan Nagar
+Biharsharif
+Bijapur
+Bikaner
+Bilaspur
+Bokaro Steel City
+Bongaon
+Botad
+Brahmapur
+Bruhat Bengaluru Mahanagara Palike (BBMP)
+Budaun
+Bulandshahar
+Bundi
+Burari
+Burhanpur
+Buxar
+Champdani
+Chandannagar
+Chandausi
+Chandigarh
+Chandrapur
+Chapra
+Chas
+Chennai
+Chhatarpur
+Chhindwara
+Chikmagalur
+Chilakaluripet
+Chitradurga
+Chittaurgarh
+Chittoor
+Churu
+Coimbatore
+Cuddalore
+Cuttack
+Dabgram
+Dallo Pura
+Damoh
+Darbhanga
+Darjiling
+Datia
+Davanagere
+Deesa
+Dehradun
+Dehri
+Delhi Cantonment
+Delhi Municipal Corporation (DMC)
+Deoghar
+Deoli
+Deoria
+Dewas
+Dhamtari
+Dhanbad
+Dharmavaram
+Dhaulpur
+Dhule
+Dibrugarh
+Dimapur
+Dinapur Nizamat
+Dindigul
+Dohad
+Dum Dum
+Durg
+Durgapur
+Eluru
+English Bazar
+Erode
+Etah
+Etawah
+Faizabad
+Faridabad
+Farrukhabad-cum-Fatehgarh
+Fatehpur
+Firozabad
+Firozpur
+Gadag-Betigeri
+Gandhidham
+Gandhinagar
+Ganganagar
+Gangapur City
+Gangawati
+Gangtok
+Gaya
+Ghaziabad
+Ghazipur
+Giridih
+Godhra
+Gokal Pur
+Gonda
+Gondal
+Gondiya
+Gorakhpur
+Greater Mumbai
+Greater Noida
+Gudivada
+Gulbarga
+Guna
+Guntakal
+Guntur
+Gurgaon
+Guwahati
+Gwalior
+Habra
+Hajipur
+Haldia
+Haldwani-cum-Kathgodam
+Halisahar
+Hanumangarh
+Haora
+Hapur
+Hardoi
+Hardwar
+Hassan
+Hastsal
+Hathras
+Hazaribag
+Hindaun
+Hindupur
+Hinganghat
+Hisar
+Hoshangabad
+Hoshiarpur
+Hospet
+Hosur
+Hubli-Dharwad
+Hugli-Chinsurah
+Ichalkaranji
+Imphal
+Indore
+Jabalpur
+Jagadhri
+Jagdalpur
+Jagtial
+Jaipur
+Jalandhar
+Jalgaon
+Jalna
+Jalpaiguri
+Jamalpur
+Jammu
+Jamnagar
+Jamshedpur
+Jamuria
+Jaunpur
+Jehanabad
+Jetpur Navagadh
+Jhansi
+Jhunjhunun
+Jind
+Jodhpur
+Jorhat
+Junagadh
+Kadapa
+Kaithal
+Kakinada
+Kalol
+Kalyan Dombivali
+Kalyani
+Kamarhati
+Kancheepuram
+Kanchrapara
+Kanhangad
+Kanpur
+Kanpur (Cantonment Board)
+Karaikkudi
+Karawal Nagar
+Karimnagar
+Karnal
+Kasganj
+Kashipur
+Katihar
+Khammam
+Khandwa
+Khanna
+Kharagpur
+Khardaha
+Khargone
+Khora
+Khurja
+Kirari Suleman Nagar
+Kishanganj
+Kishangarh
+Kochi
+Kolar
+Kolhapur
+Kolkata (Calcutta)
+Kollam
+Korba
+Kota
+Kozhikode
+Krishnanagar
+Kulti
+Kumbakonam
+Kurichi
+Kurnool
+Lakhimpur
+Lalitpur
+Latur
+Loni
+Lucknow
+Ludhiana
+Machilipatnam
+Madanapalle
+Madavaram
+Madhyamgram
+Madurai
+Mahbubnagar
+Mahesana
+Maheshtala
+Mainpuri
+Malappuram
+Malegaon
+Malerkotla
+Mandoli
+Mandsaur
+Mandya
+Mangalagiri
+Mangalore
+Mango
+Mathura
+Maunath Bhanjan
+Medinipur
+Meerut
+Mira Bhayandar
+Miryalaguda
+Mirzapur-cum-Vindhyachal
+Modinagar
+Moga
+Moradabad
+Morena
+Morvi
+Motihari
+Mughalsarai
+Muktsar
+Munger
+Murwara (Katni)
+Mustafabad
+Muzaffarnagar
+Muzaffarpur
+Mysore
+Nabadwip
+Nadiad
+Nagaon
+Nagapattinam
+Nagaur
+Nagda
+Nagercoil
+Nagpur
+Naihati
+Nalgonda
+Nanded Waghala
+Nandurbar
+Nandyal
+Nangloi Jat
+Narasaraopet
+Nashik
+Navi Mumbai (New Bombay)
+Navi Mumbai Panvel Raigad
+Navsari
+Neemuch
+Nellore
+New Delhi Municipal Council (NDMC)
+Neyveli
+Nizamabad
+Noida
+North Barrackpur
+North Dum Dum
+Ongole
+Orai
+Osmanabad
+Ozhukarai
+Palakkad
+Palanpur
+Pali
+Pallavaram
+Palwal
+Panchkula
+Panihati
+Panipat
+Panvel
+Parbhani
+Patan
+Pathankot
+Patiala
+Patna
+Pilibhit
+Pimpri Chinchwad
+Pithampur
+Porbandar
+Port Blair
+Proddatur
+Puducherry
+Pudukkottai
+Pune
+Puri
+Purnia
+Puruliya
+Rae Bareli
+Raichur
+Raiganj
+Raigarh
+Raipur
+Rajahmundry
+Rajapalayam
+Rajarhat Gopalpur
+Rajkot
+Rajnandgaon
+Rajpur Sonarpur
+Ramagundam
+Rampur
+Ranchi
+Ranibennur
+Raniganj
+Ratlam
+Raurkela Industrial Township
+Raurkela Town
+Rewa
+Rewari
+Rishra
+Robertson Pet
+Rohtak
+Roorkee
+Rudrapur
+S.A.S. Nagar
+Sagar
+Saharanpur
+Saharsa
+Salem
+Sambalpur
+Sambhal
+Sangli-Miraj Kupwad
+Santipur
+Sasaram
+Satara
+Satna
+Sawai Madhopur
+Secunderabad
+Sehore
+Seoni
+Serampore
+Shahjahanpur
+Shamli
+Shikohabad
+Shillong
+Shimla
+Shimoga
+Shivpuri
+Sikar
+Silchar
+Siliguri
+Singrauli
+Sirsa
+Sitapur
+Siwan
+Solapur
+Sonipat
+South Dum Dum
+Srikakulam
+Srinagar
+Sujangarh
+Sultan Pur Majra
+Sultanpur
+Surat
+Surendranagar Dudhrej
+Suryapet
+Tadepalligudem
+Tadpatri
+Tambaram
+Tenali
+Thane
+Thanesar
+Thanjavur
+Thiruvananthapuram
+Thoothukkudi
+Thrissur
+Tinsukia
+Tiruchirappalli
+Tirunelveli
+Tirupati
+Tiruppur
+Tiruvannamalai
+Tiruvottiyur
+Titagarh
+Tonk
+Tumkur
+Udaipur
+Udgir
+Udupi
+Ujjain
+Ulhasnagar
+Uluberia
+Unnao
+Uttarpara Kotrung
+Vadodara
+Valsad
+Vapi
+Varanasi
+Vasai-Virar City
+Vellore
+Veraval
+Vidisha
+Vijayawada
+Vizianagaram
+Warangal
+Wardha
+Yamunanagar
+Yavatmal
+Adrar
+Ain Defla
+Ain Temouchent
+ALGIERS (EL DJAZAIR)
+Annaba
+Batna
+Béchar
+Bejaïa
+Beskra (Biskra
+Bordj Bou Arreridj
+Bouira
+Boumerdes
+Chlef
+El Bayadh
+El Boulaïda (Blida
+El Djelfa
+El Oued
+El Tarf
+Ghardaïa
+Ghilizane (Relizane)
+Guelma
+Jijel
+Khenchela
+Laghouat
+Lemdiyya (Médéa
+Mestghanem (Mostaganem)
+Mila
+Mouaskar (Mascara)
+M'Sila
+Naama
+Oum El Bouaghi
+Qacentina (Constantine)
+Saïda
+Sidi-bel-Abbès
+Skikda
+Souq Ahras
+Stif (Sétif
+Tamanrasset
+Tbessa (Tébessa)
+Tihert (Tiaret
+Tilimsen (Tlemcen)
+Tipaza
+Tissemsilt
+Tizi Ouzou
+Wahran (Oran
+Wargla (Ouargla)
+Cotonou
+Parakou
+PORTO-NOVO
+GABORONE
+Banfora
+Bobo Dioulasso
+Dori
+Fada N'gourma
+Gorom-Gorom
+Kaya
+Koudougou
+OUAGADOUGOU
+Ouahigouya
+Solenzo
+Tenkodogo
+BUJUMBURA
+PRAIA
+Douala
+YAOUNDE
+Abengourou
+Abidjan
+Anyama
+Bouake
+Daloa
+Divo
+Gagnoa
+Korhogo
+Man
+San Pédro
+Soubre
+YAMOUSSOUKRO
+DJIBOUTI
+Alexandria
+Assyût
+Aswan
+Behera
+Beni-Suef
+CAIRO
+Dakahlia
+Damietta
+Faiyûm
+Gharbia
+Giza
+Helwan
+Ismailia
+Kafr-Elsheikh
+Kalyoubia
+Luxer
+Matrouh
+Menia
+Menoufia
+North Sinai
+Port Said
+Qena
+Red Sea
+Sharkia
+Sohag
+Suez
+MALABO
+ADDIS ABABA
+Awassa
+Bahir Dar
+Debre Zeit
+Dessie
+Dire Dawa
+Gondar
+Harar
+Jimma
+Mekele
+Nazareth
+Franceville
+LIBREVILLE
+Port-Gentil
+ACCRA
+Ashiaman
+Koforidua
+Kumasi
+Madina
+Obuasi
+Tamale
+Tema
+Boke
+CONAKRY
+Coyah
+Dubreka
+Kankan
+Kindia
+Nzérékoré
+Siguiri
+BISSAU
+Eldoret
+Garissa
+Kangundo
+Karuri
+Kericho
+Kikuyu
+Kisumu
+Kitale
+Kitui
+Machakos
+Malindi
+Mavoko/AthiRiver
+Mombasa
+NAIROBI
+Naivasha
+Nakuru
+Ngong
+Nyeri
+Ruiru
+Thika
+Vihiga
+MASERU
+MONROVIA
+ANTANANARIVO6
+Antsirabe
+Fianarantsoa
+Mahajanga
+Toamasina
+Blantyre City
+LILONGWE
+Mzuzu City
+Zomba City
+Toliara
+BAMAKO7
+Kayes
+Koutiala
+Mopti
+Ségou
+Sikasso
+NOUAKCHOTT
+Beau Bassin - Rose Hill
+PORT LOUIS
+Vacoas - Phoenix
+Agadir
+Al Hoceima
+Azilal
+Béni-Mellal
+Benslimane
+Berkane
+Berrechid
+Casablanca (Dar-el-Beida
+Chtouka-Ait Baha
+El Hajeb
+El Kelâa des Sraghna
+El-Jadida
+Errachidia
+Essaouira
+Fès
+Fquih Ben Salah
+Guelmim
+Inezgane ait Melloul
+Kénitra
+Khemisset
+Khénifra
+Khouribga
+Laayoune
+Larache
+Marrakech
+M'Diq-Fnideq
+Médiouna
+Meknès
+Midelt
+Mohammedia
+Nador
+Nouaceur
+Ouarzazate
+Oued Ed-Dahab
+Oujda
+RABAT
+Rehamna
+Safi
+Salé
+Sefrou
+Settat
+Sidi Kacem
+Sidi Slimane
+Skhirate-Témara
+Tanger
+Taourirt
+Taroudannt
+Taza
+Tétouan
+Youssoufia
+Beira
+Chimoio
+Lichinga
+MAPUTO
+Matola
+Maxixe
+Nacala
+Nampula
+Pemba
+Quelimane
+Tete
+Xai-Xai
+WINDHOEK
+Maradi
+NIAMEY
+Tahoua
+Zinder
+JUBA
+Malakal
+Wau
+SAINT-DENIS
+Saint-Paul
+KIGALI
+JAMESTOWN
+SAO TOME
+DAKAR
+Diourbel
+Guediawaye
+Kaolack
+Mbour
+Pikine
+Rufisque
+Saint Louis
+Thiès
+Ziguinchor
+VICTORIA
+Bo
+FREETOWN
+Kenema
+Makeni
+MOGADISHU
+CAPE TOWN
+Durban
+Johannesburg
+PRETORIA
+Kara
+LOME
+Sokode
+Bizerte
+Gabes
+Kairouan
+Sfax
+TUNIS
+Gulu
+Hoima
+KAMPA
+Kasese
+Kira
+Lugazi
+Makindye Ssabagabo
+Masak
+Mbarara
+Mukono
+Nansana
+Dar es Salaam
+DODOMA
+Mwanza
+Zanzibar
+EL AAIUN
+Chingola
+Chipata
+Kabwe
+Kasama
+Kitwe
+Livingstone
+Luanshya
+LUSAKA
+Mufulira
+Ndola
+Bulawayo
+Chitungwiza
+HARARE
+Mutare
+THE VALLEY
+ORANJESTAD
+NASSAU
+BELMOPAN
+HAMILTON
+Abbotsford-Mission
+Barrie
+Brampton
+Brantford
+Burlington
+Burnaby
+Calgary
+Cambridge
+Chatham-Kent
+Coquitlam
+Edmonton
+Gatineau
+Greater Sudbury / Grand Sudbury
+Guelph
+Halifax
+Hamilton
+Kelowna
+Kingston
+Kitchener-Cambridge-Waterloo
+Laval
+Lévis V
+London
+Longueuil
+Markham
+Mississauga
+Moncton
+Montréal
+Oakville
+Oshawa
+OTTAWA
+Ottawa - Gatineau
+Peterborough
+Québec
+Regina
+Richmond
+Richmond Hill
+Saanich
+Saguenay
+Saint John
+Saskatoon
+Sherbrooke
+St Catharines-Niagara
+St. John's
+Surrey
+Thunder Bay
+Toronto
+Trois-Rivières
+Vancouver
+Vaughan
+Victoria
+Whitby
+Windsor
+Winnipeg
+GEORGE TOWN
+Alajuela
+Cartago
+Desamparados
+Goicoechea
+Heredia
+La Unión
+Pérez Zeledón
+Pococí
+Puntarenas
+San Carlos
+SAN JOSÉ
+Bayamo
+Camagüey
+Ciego de Ávila
+Cienfuegos
+Guantánamo
+Holguín
+LA HABANA
+Las Tunas
+Matanzas
+Pinar del Río
+Sancti Spíritus
+Santa Clara
+Santiago de Cuba
+Markham
+Mississauga
+Moncton
+Montréal
+Oakville
+Oshawa
+OTTAWA
+Ottawa - Gatineau
+Peterborough
+Québec
+Regina
+Richmond
+Richmond Hill
+Saanich
+Saguenay
+Saint John
+Saskatoon
+Sherbrooke
+St Catharines-Niagara
+St. John's
+Surrey
+Thunder Bay
+Toronto
+Trois-Rivières
+Vancouver
+Vaughan
+Victoria
+Whitby
+Windsor
+Winnipeg
+GEORGE TOWN
+Alajuela
+Cartago
+Desamparados
+Goicoechea
+Heredia
+La Unión
+Pérez Zeledón
+Pococí
+Puntarenas
+San Carlos
+SAN JOSÉ
+Bayamo
+Camagüey
+Ciego de Ávila
+Cienfuegos
+Guantánamo
+Holguín
+LA HABANA
+Las Tunas
+Matanzas
+Pinar del Río
+Sancti Spíritus
+Santa Clara
+Santiago de Cuba
+Azua
+Bajos de Haina
+Baní
+Boca Chica
+Bonao
+Higüey
+La Romana
+La Vega
+Los Alcarrizos
+Moca
+Puerto Plata
+San Cristóbal
+San Francisco de Macoris
+San Juan de la Maguana
+San Pedro de Macorís
+Santiago de los Caballeros
+SANTO DOMINGO
+Santo Domingo East - Santo Domingo Este
+Santo Domingo North - Santo Domingo Norte
+Santo Domingo West - Santo Domingo Oeste
+Ahuachapán
+Apopa
+Ciudad Delgado
+Ilopango
+Mejicanos
+San Martin
+San Miguel
+SAN SALVADOR
+Santa Ana
+Santa Tecla
+Soyapango
+NUUK (GODTHAB)
+ST. GEORGE'S
+BASSE-TERRE
+Pointe-à-Pitre
+CUIDAD DE GUATEMALA
+Escuintla
+Mixco
+Quetzaltenango
+Villa Nueva
+Cap-Haitien
+Carrefour
+Delmas
+PORT-AU-PRINCE
+Catacamas
+Choloma
+Choluteca
+Comayagua
+Danlí
+El Progreso
+Juticalpa
+La Ceiba
+Olanchito
+Puerto Cortés
+San Pedro Sula
+TEGUCIGALPA
+Villanueva
+KINGSTON16
+Montego Bay
+Portmore
+Spanish Town
+FORT-DE-FRANCE
+Acapulco
+Acayucan
+Aguascalientes
+Apatzingán de la Constitución
+Cabo San Lucas
+Campeche
+Cancún
+Cárdenas
+Celaya
+Chetumal
+Chihuahua
+Chilpacingo de los Bravo
+Ciudad Acuña
+Ciudad Del Carmen
+Ciudad Guzmán
+Ciudad Lázaro Cárdenas
+Ciudad Obregón
+Ciudad Valles
+Ciudad Victoria
+Coatzacoalcos
+Colima-Villa de Álvarez
+Comitán de Domínguez
+Córdoba
+Cuauhtemoc
+Cuautla
+Cuernavaca
+Culiacán Rosales
+Delicias
+Ensenada
+Fresnillo
+Guadalajara
+Guanajuato
+Guaymas
+Hermosillo
+Heroica Nogales
+Hidalgo del Parral
+Iguala de la Independencia
+Irapuato
+Juárez
+La Laguna
+La Paz
+La Piedad-Pénjamo
+Lagos de Moreno
+León
+Los Mochis
+Manzanillo
+Matamoros
+Mazatlán
+Mérida
+Mexicali
+MEXICO, CIUDAD DE
+Minatitlán
+Monclova-Frontera
+Monterrey
+Morelia
+Moroleón Uriangato - Moroleón-Uriangato
+Navojoa
+Nuevo Laredo
+Oaxaca
+Ocotlán
+Orizaba
+Pachuca
+Piedras Negras
+Playa del Carmen
+Poza Rica
+Puebla-Tlaxcala
+Puerto Vallarta
+Querétaro
+Reynosa-Río Bravo
+Rioverde-Ciudad Fernández
+Salamanca
+Saltillo
+San Cristóbal de las Casas
+San Francisco del Rincón
+San José del Cabo
+San Juan Bautista Tuxtepec
+San Juan del Río
+San Luis Potosí-Soledad de Graciano Sánchez
+San Luis Rio Colorado
+Tampico
+Tapachula de Cordova y Ordoñez
+Tecomán
+Tehuacán
+Tehuantepec
+Tepatitlán De Morelos
+Tepic
+Teziutlán
+Tianguistenco
+Tijuana
+Tlaxcala
+Toluca
+Tula
+Tulancingo
+Túxpan de Rodríguez Cano
+Tuxtla Gutiérrez
+Uruapan
+Veracruz
+Victoria de Durango
+Villahermosa
+Xalapa
+Zacatecas-Guadalupe
+Zamora-Jacona
+Chinandega
+León
+MANAGUA
+Masaya
+Tipitapa
+CIUDAD DE PANAMÁ
+San Miguelito
+Bayamón
+Caguas
+Carolina
+Ponce
+SAN JUAN
+CASTRIES
+SAINT-PIERRE
+PORT-OF-SPAIN
+GRAND TURK
+Abilene (TX)
+Akron (OH)
+Albuquerque (NM)
+Alexandria (VA
+Allentown (PA
+Amarillo (TX)
+Anaheim (CA
+Anchorage (AK
+Ann Arbor (MI
+Antioch (CA)
+Arlington (TX)
+Arvada (CO)
+Athens (GA
+Atlanta (GA
+Augusta (GA
+Aurora (CO
+Aurora (IL)
+Austin (TX)
+Bakersfield (CA)
+Baltimore (MD)
+Baton Rouge (LA
+Beaumont (TX)
+Bellevue (WA
+Berkeley (CA)
+Billings (MT)
+Birmingham (AL)
+Boise City (ID)
+Boston (MA)
+Boulder (CO)
+Bridgeport (CT
+Broken Arrow (OK)
+Brownsville (TX)
+Oklahoma City (OK)
+Olathe(KS)
+Omaha(NE)
+Ontario(CA)
+Orange(CA)
+Orlando(FL)
+Overland Park(KS)
+Oxnard(CA)
+Palm Bay City(FL)
+Palmdale(CA)
+Pasadena(CA)
+Pasadena(TX)
+Paterson(NJ)
+Pearland(TX)
+Pembroke Pines(FL)
+Peoria(AZ)
+Peoria(IL)
+Philadelphia(PA)
+Phoenix(AZ)
+Pittsburgh(PA)
+Plano(TX)
+Pomona(CA)
+Pompano Beach(FL)
+Port St.Lucie(FL)
+Portland(OR)
+Providence(RI)
+Provo(UT)
+Pueblo(CO)
+Raleigh(NC)
+Rancho Cucamonga(CA)
+Reno(NV)
+Renton(WA)
+Rialto(CA)
+Richardson(TX)
+Richmond(CA)
+Richmond(VA)
+Riverside(CA)
+Rochester(MN)
+Rochester(NY)
+Rockford(IL)
+Roseville(CA)
+Round Rock(TX)
+Sacramento(CA)
+Salem(OR)
+Salinas(CA)
+Salt Lake City(UT)
+San Angelo(TX)
+San Antonio(TX)
+San Bernardino(CA)
+San Buenaventura(CA)
+San Diego(CA)
+San Francisco(CA)
+San Jose(CA)
+San Mateo(CA)
+Sandy Springs(GA)
+Santa Ana(CA)
+Santa Clara(CA)
+Santa Clarita(CA)
+Santa Maria(CA)
+Santa Rosa(CA)
+Savannah(GA)
+Scottsdale(AZ)
+Seattle(WA)
+Burbank (CA)
+Buffalo (NY)
+Cambridge (MA)
+Cape Coral (FL)
+Carlsbad (CA)
+Carrollton (TX)
+Cary (NC)
+Cedar Rapids (IA)
+Centennial (CO)
+Chandler (AZ)
+Charleston (SC)
+Charlotte (NC)
+Chattanooga (TN)
+Chesapeake (VA)
+Chicago (IL)
+Chula Vista (CA)
+Cincinnati (OH)
+Clarksville (TN)
+Clearwater (FL)
+Cleveland (OH)
+Clovis (CA)
+College Station (TX)
+Colorado Springs (CO)
+Columbia (MO)
+Columbia (SC)
+Columbus (GA)
+Columbus (OH)
+Concord (CA)
+Coral Springs (FL)
+Corona (CA)
+Corpus Christi (TX)
+Costa Mesa (CA)
+Dallas (TX)
+Daly City (CA)
+Davenport (IA)
+Davie (FL)
+Dayton (OH)
+Denton (TX)
+Denver (CO)
+Des Moines (IA)
+Detroit (MI)
+Downey (CA)
+Durham (NC)
+El Cajon (CA)
+El Monte (CA)
+El Paso (TX)
+Elgin (IL)
+Elizabeth (NJ)
+Elk Grove (CA)
+Escondido (CA)
+Eugene (OR)
+Evansville (IN)
+Everett (WA)
+Fairfield (CA)
+Fargo (ND)
+Fayetteville (NC)
+Fontana (CA)
+Fort Collins (CO)
+Fort Lauderdale (FL)
+Fort Worth (TX)
+Fremont (CA)
+Fresno (CA)
+Frisco (TX)
+Fullerton (CA)
+Gainesville (FL)
+Garden Grove (CA)
+Garland (TX)
+Gilbert (AZ)
+Glendale (AZ)
+Glendale (CA)
+Grand Prairie (TX)
+Grand Rapids (MI)
+Greeley (CO)
+Green Bay (WI)
+Greensboro (NC)
+Gresham (OR)
+Hampton (VA)
+Hartford (CT)
+Hayward (CA)
+Henderson (NV)
+Hialeah (FL)
+High Point City (NC)
+Hillsboro (OR)
+Hollywood (FL)
+Houston (TX)
+Huntington Beach (CA)
+Huntsville (AL)
+Independence (MO)
+Indianapolis (IN)
+Inglewood (CA)
+Irvine (CA)
+Irving (TX)
+Jackson (MS)
+Jacksonville (FL)
+Jersey City (NJ)
+Joliet (IL)
+Jurupa Valley (CA)
+Kansas City (KS)
+Kansas City (MO)
+Kent (WA)
+Killeen (TX)
+Knoxville (TN)
+Lafayette (LA)
+Lakeland (FL)
+Lakewood (CO)
+Lancaster (CA)
+Lansing (MI)
+Laredo (TX)
+Las Cruces (NM)
+Las Vegas (NV)
+League City (TX)
+Lewisville (TX)
+Lexington-Fayette (KY)
+Lincoln (NE)
+Little Rock (AR)
+Long Beach (CA)
+Los Angeles (CA)
+Louisville (KY)
+Lowell (MA)
+Lubbock (TX)
+Macon-Bibb (GA)
+Madison (WI)
+Manchester (NH)
+McAllen (TX)
+McKinney City (TX)
+Memphis (TN)
+Mesa (AZ)
+Mesquite (TX)
+Miami (FL)
+Miami Gardens (FL)
+Midland City (TX)
+Milwaukee (WI)
+Minneapolis (MN)
+Miramar (FL)
+Mobile (AL)
+Modesto (CA)
+Montgomery (AL)
+Moreno Valley (CA)
+Murfreesboro (TN)
+Murrieta (CA)
+Naperville (IL)
+Nashville-Davidson (TN)
+New Haven (CT)
+New Orleans (LA)
+New York (NY)
+Newark (NJ)
+Newport News (VA)
+Norfolk (VA)
+Norman (OK)
+North Charleston (SC)
+North Las Vegas (NV)
+Norwalk (CA)
+Oakland (CA)
+Oceanside (CA)
+Odessa (TX)
+Oklahoma City (OK)
+Olathe (KS)
+Omaha (NE)
+Ontario (CA)
+Orange (CA)
+Orlando (FL)
+Overland Park (KS)
+Oxnard (CA)
+Palm Bay City (FL)
+Palmdale (CA)
+Pasadena (CA)
+Pasadena (TX)
+Paterson (NJ)
+Pearland (TX)
+Pembroke Pines (FL)
+Peoria (AZ)
+Peoria (IL)
+Philadelphia (PA)
+Phoenix (AZ)
+Pittsburgh (PA)
+Plano (TX)
+Pomona (CA)
+Pompano Beach (FL)
+Port St. Lucie (FL)
+Portland (OR)
+Providence (RI)
+Provo (UT)
+Pueblo (CO)
+Raleigh (NC)
+Rancho Cucamonga (CA)
+Reno (NV)
+Renton (WA)
+Rialto (CA)
+Richardson (TX)
+Richmond (CA)
+Richmond (VA)
+Riverside (CA)
+Rochester (MN)
+Rochester (NY)
+Rockford (IL)
+Roseville (CA)
+Round Rock (TX)
+Sacramento (CA)
+Salem (OR)
+Salinas (CA)
+Salt Lake City (UT)
+San Angelo (TX)
+San Antonio (TX)
+San Bernardino (CA)
+San Buenaventura (CA)
+San Diego (CA)
+San Francisco (CA)
+San Jose (CA)
+San Mateo (CA)
+Sandy Springs (GA)
+Santa Ana (CA)
+Santa Clara (CA)
+Santa Clarita (CA)
+Santa Maria (CA)
+Santa Rosa (CA)
+Savannah (GA)
+Scottsdale (AZ)
+Seattle (WA)
+Shreveport (LA)
+Simi Valley (CA)
+Sioux Falls (SD)
+South Bend (IN)
+Spokane (WA)
+Springfield (IL)
+Springfield (MA)
+Springfield (MO)
+St. Louis (MO)
+St. Paul (MN)
+St. Petersburg (FL)
+Stamford (CT)
+Sterling Heights (MI)
+Stockton (CA)
+Sunnyvale (CA)
+Surprise (AZ)
+Syracuse (NY)
+Tacoma (WA)
+Tallahassee (FL)
+Tampa (FL)
+Temecula (CA)
+Tempe (AZ)
+Thornton (CO)
+Thousand Oaks (CA)
+Toledo (OH)
+Topeka (KS)
+Torrance (CA)
+Tucson (AZ)
+Tulsa (OK)
+Tyler (TX)
+Urban Honolulu (HI)
+Vallejo (CA)
+Vancouver (WA)
+Victorville City (CA)
+Virginia Beach (VA)
+Visalia (CA)
+Vista (CA)
+Waco (TX)
+Warren (MI)
+WASHINGTON (DC)
+Waterbury (CT)
+West Covina (CA)
+West Jordan (UT)
+West Palm Beach (FL)
+West Valley City (UT)
+Westminster (CO)
+Wichita (KS)
+Wichita Falls (TX)
+Wilmington (NC)
+Winston-Salem (NC)
+Worcester (MA)
+Yonkers (NY)
+CHARLOTTE AMALIE
+Bahía Blanca-Cerri
+Bariloche
+BUENOS AIRES
+Catamarca
+Comodoro Rivadavia-Rada Tilly
+Concordia
+Córdoba
+Corrientes
+Formosa
+La Plata
+La Rioja
+Mar del Plata-Batán
+Mendoza
+Neuquén-Plottier
+Paraná
+Posadas
+Rawson-Trelew-Playa Unión
+Resistencia
+Río Cuarto
+Rio Gallegos
+Rosario
+Salta
+San Juan
+San Luis - El Chorrillo
+San Nicolás-Villa Constitución
+San Salvador de Jujuy-Palpalá
+Santa Fé
+Santa Rosa-Toay
+Santiago del Estero-La Banda
+Tucumán-Tafí Viejo
+Ushuaia-Río Grande
+Cochabamba
+El Alto
+LA PAZ
+Oruro
+Potosí
+Sacaba
+Santa Cruz
+SUCRE
+Tarija
+Yacuiba
+Abaeteluba
+Açailândia
+Aguas Lindas de Goiás
+Alagoinhas
+Almirante Tamandaré
+Altamira
+Alvorada
+Americana
+Ananindeua
+Anápolis
+Angra dos Reis
+Aparecida de Goiania
+Apucarana
+Aracaju
+Araçatuba
+Araguaina
+Araguario
+Arapiraca
+Arapongas
+Araraquara
+Araras
+Araruama
+Araucária
+Araxá
+Ariquemes
+Assis
+Atibaia
+Bacabal
+Bagé
+Balneário Camboriú
+Barbacena
+Barcarena
+Barra Mansa
+Barreiras
+Barretos
+Barueri
+Bauru
+Belém
+Belford Roxo
+Belo Horizonte
+Bento Gonçalves
+Betim
+Birigui
+Blumenou
+Boa Vista
+Botucatu
+Bragança
+Bragança Paulista
+BRASILIA
+Brusque
+Cabo de Santo Agostinho
+Cabo Frio
+Cachoeirinha
+Cachoeiro de Itapemirim
+Camacari
+Camaragibe
+Cambé
+Cametá
+Campina Grande
+Campinas
+Campo Grande
+Campo Largo
+Campos dos Goytacazes
+Canoas
+Caraguatatuba
+Carapicuíba
+Cariacica
+Caruaru
+Cascavel
+Castanhal
+Catalão
+Catanduva
+Caucaia
+Caxias
+Caxias do Sul
+Chapecó
+Codo
+Colatina
+Colombo
+Conselheiro Lafaiete
+Contagem
+Coronel Fabriciano
+Corumbá
+Cotia
+Crato
+Criciúma
+Cubatao
+Cuiabá
+Curitiba
+Diadema
+Divinópolis
+Dourados
+Duque de Caxias
+Embu
+Erechim
+Eunápolis
+Feira de Santana
+Ferraz de Vasconcelos
+Florianópolis
+Formosa
+Fortaleza
+Foz do Iguaçu
+Franca
+Francisco Morato
+Franco da Rocha
+Garanhuns
+Goiânia
+Governador Valadares
+Gravatai
+Guarapari
+Guarapuava
+Guaratinguetá
+Guarujá
+Guarulhos
+Hortolandia
+Ibirité
+Igarassu
+Iguatu
+Ilhéus
+Imperatriz
+Indaiatuba
+Ipatinga
+Itabiraí
+Itaboraí
+Itabuna
+Itaguaí
+Itajaí
+Itapecerica da Serra
+Itapetininga
+Itapevi
+Itapipoca
+Itaquaquecetuba
+Itatiba
+Itu
+Ituiutaba
+Itumbiara
+Jaboatao dos Guarapes
+Jacareí
+Jandira
+Japeri
+Jaraguá do Sul
+Jaú
+Jequié
+Ji-Paraná
+Joao Pessoa
+Joinville
+Juazeiro
+Juàzeiro do Norte
+Juiz de Fora
+Jundiaí
+Lagarto
+Lages
+Lauro de Freitas
+Lavras
+Leme
+Limeira
+Linhares
+Londrina
+Luziânia
+Macae
+Macapá
+Maceió
+Magé
+Manaus
+Maraba
+Maracanau
+Maranguape
+Maricá
+Marília
+Maringá
+Marituba
+Mauá
+Mesquita
+Moji das Cruzes
+Moji-Guaçu
+Montes Claros
+Mossoró
+Muriaé
+Natal
+Nilópolis
+Niterói
+Nossa Senhora do Socorro
+Nova Friburgo
+Nova Iguaçu
+Novo Gama
+Nôvo Hamburgo
+Olinda
+Osasco
+Ourinhos
+Paço do Lumiar
+Palhoça
+Palmas
+Paragominas
+Paranaguá
+Parauapebas
+Parintins
+Parnaíba
+Parnamirim
+Passo Fundo
+Passos
+Patos
+Patos de Minas
+Paulínia
+Paulista
+Paulo Afonso
+Pelotas
+Petrolina
+Petrópolis
+Pindamonhangaba
+Pinhais
+Piracicaba
+Piraquara
+Poà
+Poços de Caldas
+Ponta Grossa
+Porto Alegre
+Porto Seguro
+Porto Velho
+Pouso Alegre
+Praia Grande
+Presidente Prudente
+Queimados
+Recife
+Resende
+Ribeirao das Neves
+Ribeirao Pires
+Ribeirao Prêto
+Rio Branco
+Rio Claro
+Rio das Ostras
+Rio de Janeiro
+Rio Grande
+Rio Verde
+Rondonópolis
+Sabára
+Salto
+Salvador
+Santa Bárbara D'Oeste
+Santa Cruz do Capibaribe
+Santa Cruz do Sul
+Santa Luzia (Minas Gerais)
+Santa Maria
+Santa Rita
+Santana
+Santana de Parnaíba
+Santarém
+Santo André
+Santo Antônio de Jesus
+Santos
+Sao Bernardo do Campo
+Sao Caetano do Sul
+Sao Carlo
+São Félix do Xingu
+Sao Gonçalo
+Sao Joao de Meriti
+Sao José
+Sao José de Ribamar
+Sao José do Rio Prêto
+Sao José dos Campos
+Sao José dos Pinhais
+Sao Leopoldo
+São Lourenço da Mata
+Sao Luís
+São Mateus
+Sao Paulo
+Sao Vicente
+Sapucaia do Sul
+Senador Canedo
+Serra
+Sertaozinho
+Sete Lagoas
+Simoes Filho
+Sinop
+Sobral
+Sorocaba
+Sumaré
+Susano
+Taboao da Serra
+Tailândia
+Tatuí
+Taubaté
+Teixeira de Freitas
+Teófilo Otoni
+Teresina
+Teresópolis
+Brazil - Brésil24
+1 VII 2016 (ESDJ)
+Timon
+Toledo
+Três Lagoas
+Trindade
+Tubarão
+Tucuruí
+Ubá
+Uberaba
+Uberlândia
+Umuarama
+Uruguaiana
+Valinhos
+Valparaíso de Goiás
+Varginha
+Varzea Grande
+Varzea Paulista
+Vespasiano
+Viamao
+Vila Velha
+Vitória
+Vitória da Conquista
+Vitória de Santo Antao
+Volta Redonda
+Votorantim
+Alto Hospicio
+Antofagasta
+Arica
+Calama
+Chiguallante
+Chillán
+Concepción
+Copiapó
+Coquimbo
+Coronel
+Curicó
+Iquique
+La Serena
+Los Ángeles
+Osorno
+Puente Alto
+Puerto Montt
+Punta Arenas
+Quilpué
+Rancagua
+San Bernardo
+San Pedro de la Paz
+SANTIAGO
+Talca
+Talcahuano
+Temuco
+Valdivia
+Valparaíso
+Villa Alemana
+Viña del Mar
+Apartadó
+Armenia
+Barrancabermeja
+Barranquilla
+Bello
+BOGOTÁ, D.C
+Bucaramanga
+Buenaventura
+Cali
+Cartagena
+Cartago
+Caucasia
+Chía
+Ciénaga
+Cúcuta
+Dosquebradas
+Duitama
+Envigado
+Facatativá
+Florencia
+Floridablanca
+Fusagasugá
+Girardot
+Girón
+Gudalajara de Buga
+Ibagué
+Ipiales
+Itagüí
+Jamundí
+Lorica
+Magangué
+Maicao
+Malambo
+Manaure
+Manizales
+Medellín
+Montería
+Neiva
+Palmira
+Pasto
+Pereira
+Piedecuesta
+Pitalito
+Popayán
+Quibdo
+Riohacha
+Rionegro
+San Andrés de Tumaco
+Santa Marta
+Sincelejo
+Soacha
+Sogamoso
+Soledad
+Tierralta
+Tuluá
+Tunja
+Turbo
+Uribia
+Valledupar
+Villavicencio
+Yopal
+Yumbo
+Zipaquirá
+Ambato
+Babahoyo
+Cuenca
+Durán
+Esmeraldas
+Guayaquil
+Ibarra
+La Libertad
+Loja
+Machala
+Manta
+Milagro
+Portoviejo
+Quevedo
+QUITO
+Riobamba
+Santo Domingo de los Colorados
+STANLEY
+CAYENNE
+GEORGETOWN
+ASUNCIÓN30
+Capiatá
+Ciudad del Este
+Fernando de la Mora
+Lambaré
+Luque
+San Lorenzo
+Arequipa
+Ayacucho
+Cajamarca
+Chiclayo
+Chimbote
+Chincha Alta
+Cuzco
+Huancayo
+Huánuco
+Huaraz
+Ica
+Iquitos
+Juliaca
+LIMA32
+Pisco
+Piura
+Pucallpa
+Puno
+Sullana
+Tacna
+Tarapoto
+Trujillo
+Tumbes
+PARAMARIBO
+Wanica
+MONTEVIDEO
+Anaco(F) (Capital)
+Barinas
+Barquisimeto
+Baruta
+Cabimas
+Cagua
+CARACAS
+Carora
+Carúpano
+Ciudad Bolívar
+Ciudad Guayana
+Ciudad Ojeda
+Cua
+Cumaná
+El Tigre
+Guacara
+Guanare
+Guarenas
+Guatire
+Los Guayos
+Los Teques
+Maracaibo
+Maracay
+Maturín
+Mérida
+Naguanagua
+Ocumare Del Tuy
+Petare
+Pozuelos (F) (Capital)
+Puerto Cabello
+Punto Fijo
+San Cristóbal
+San Fernando de Apure
+San Francisco
+Santa Lucía
+Táriba
+Tocuyito
+Turmero
+Valencia
+Valera
+Baghalan Center (Puli Khumry)
+Balkh Center (Mazar- Sharif)
+Herat Center
+KABUL CENTER
+Kandhar Center (Kndhar)
+Kunduz Center
+Nngarhar Center (Jlal Abad)
+Gyumri (Leninakan)
+YEREVAN
+BAKU
+Ganja
+Sumgayit
+MANAMA
+Barisal
+Chittagong
+Comilla
+DHAKA
+Khulna
+Mymensingh
+Narayanganj
+Rajshahi
+Saidpur
+THIMPHU
+BANDAR SERI BEGAWAN
+Bat Dambang
+PHNOM PENH
+Seam Reab
+BEIJING (PEKING)
+China, Hong Kong SAR - Chine, Hong Kong RAS
+HONG KONG SAR
+China, Macao SAR - Chine, Macao RAS
+MACAO
+1 I 2006 (ESDJ)
+LEFKOSIA37
+Lemesos38
+Democratic People's Republic of Korea -
+République populaire démocratique de Corée
+Anju
+Chongjin
+Haeju
+Hamhung
+Huichon
+Hyesan
+Jongju
+Kaechon
+Kaesong
+Kanggye
+Kim Chaek
+Kusong
+Nampho
+Phyongsong
+PYONGYANG
+Rason
+Sariwon
+Sinpho
+Sinuiju
+Sunchon
+Tanchon
+Tokchon
+Wonsan
+Batumi
+Kutaisi
+Rustavi
+TBILISI
+Abohar
+Achalpur
+Adilabad
+Adityapur
+Adoni
+Agartala
+Agra
+Ahmadabad
+Ahmadnagar
+Aizawl
+Ajmer
+Akbarpur
+Akola
+Alandur
+Alappuzha
+Aligarh
+Allahabad
+Alwar
+Ambala
+Ambala Sadar
+Ambarnath
+Ambattur
+Ambikapur
+Ambur
+Amravati
+Amreli
+Amritsar
+Amroha
+Anand
+Anantapur
+Anantnag
+Arrah
+Asansol
+Ashoknagar Kalyangarh
+Aurangabad (Bihar)
+Aurangabad (Maharashtra)
+Avadi
+Azamgarh
+Badlapur
+Bagaha
+Bagalkot
+Bahadurgarh
+Baharampur
+Bahraich
+Baidyabati
+Baleshwar Town
+Ballia
+Bally (Census Town)
+Bally (Municipality)
+Balurghat
+Banda
+Bankura
+Bansberia
+Banswara
+Baran
+Baranagar
+Barasat
+Baraut
+Barddhaman
+Bareilly
+Baripada Town
+Barnala
+Barrackpur
+Barshi
+Basirhat
+Basti
+Batala
+Bathinda
+Beawar
+Begusarai
+Belgaum
+Bellary
+Bettiah
+Betul
+Bhadrak
+Bhadravati
+Bhadreswar
+Bhagalpur
+Bhalswa Jahangir Pur
+Bharatpur
+Bharuch
+Bhatpara
+Bhavnagar
+Bhilai Nagar
+Bhilwara
+Bhimavaram
+Bhind
+Bhiwadi
+Bhiwandi
+Bhiwani
+Bhopal
+Bhubaneswar Town
+Bhuj
+Bhusawal
+Bid
+Bidar
+Bidhan Nagar
+Biharsharif
+Bijapur
+Bikaner
+Bilaspur
+Bokaro Steel City
+Bongaon
+Botad
+Brahmapur
+Bruhat Bengaluru Mahanagara Palike (BBMP)
+Budaun
+Bulandshahar
+Bundi
+Burari
+Burhanpur
+Buxar
+Champdani
+Chandannagar
+Chandausi
+Chandigarh
+Chandrapur
+Chapra
+Chas
+Chennai
+Chhatarpur
+Chhindwara
+Chikmagalur
+Chilakaluripet
+Chitradurga
+Chittaurgarh
+Chittoor
+Churu
+Coimbatore
+Cuddalore
+Cuttack
+Dabgram
+Dallo Pura
+Damoh
+Darbhanga
+Darjiling
+Datia
+Davanagere
+Deesa
+Dehradun
+Dehri
+Delhi Cantonment
+Delhi Municipal Corporation (DMC)
+Deoghar
+Deoli
+Deoria
+Dewas
+Dhamtari
+Dhanbad
+Dharmavaram
+Dhaulpur
+Dhule
+Dibrugarh
+Dimapur
+Dinapur Nizamat
+Dindigul
+Dohad
+Dum Dum
+Durg
+Durgapur
+Eluru
+English Bazar
+Erode
+Etah
+Etawah
+Faizabad
+Faridabad
+Farrukhabad-cum-Fatehgarh
+Fatehpur
+Firozabad
+Firozpur
+Gadag-Betigeri
+Gandhidham
+Gandhinagar
+Ganganagar
+Gangapur City
+Gangawati
+Gangtok
+Gaya
+Ghaziabad
+Ghazipur
+Giridih
+Godhra
+Gokal Pur
+Gonda
+Gondal
+Gondiya
+Gorakhpur
+Greater Mumbai
+Greater Noida
+Gudivada
+Gulbarga
+Guna
+Guntakal
+Guntur
+Gurgaon
+Guwahati
+Gwalior
+Habra
+Hajipur
+Haldia
+Haldwani-cum-Kathgodam
+Halisahar
+Hanumangarh
+Haora
+Hapur
+Hardoi
+Hardwar
+Hassan
+Hastsal
+Hathras
+Hazaribag
+Hindaun
+Hindupur
+Hinganghat
+Hisar
+Hoshangabad
+Hoshiarpur
+Hospet
+Hosur
+Hubli-Dharwad
+Hugli-Chinsurah
+Ichalkaranji
+Imphal
+Indore
+Jabalpur
+Jagadhri
+Jagdalpur
+Jagtial
+Jaipur
+Jalandhar
+Jalgaon
+Jalna
+Jalpaiguri
+Jamalpur
+Jammu
+Jamnagar
+Jamshedpur
+Jamuria
+Jaunpur
+Jehanabad
+Jetpur Navagadh
+Jhansi
+Jhunjhunun
+Jind
+Jodhpur
+Jorhat
+Junagadh
+Kadapa
+Kaithal
+Kakinada
+Kalol
+Kalyan Dombivali
+Kalyani
+Kamarhati
+Kancheepuram
+Kanchrapara
+Kanhangad
+Kanpur
+Kanpur (Cantonment Board)
+Karaikkudi
+Karawal Nagar
+Karimnagar
+Karnal
+Kasganj
+Kashipur
+Katihar
+Khammam
+Khandwa
+Khanna
+Kharagpur
+Khardaha
+Khargone
+Khora
+Khurja
+Kirari Suleman Nagar
+Kishanganj
+Kishangarh
+Kochi
+Kolar
+Kolhapur
+Kolkata (Calcutta)
+Kollam
+Korba
+Kota
+Kozhikode
+Krishnanagar
+Kulti
+Kumbakonam
+Kurichi
+Kurnool
+Lakhimpur
+Lalitpur
+Latur
+Loni
+Lucknow
+Ludhiana
+Machilipatnam
+Madanapalle
+Madavaram
+Madhyamgram
+Madurai
+Mahbubnagar
+Mahesana
+Maheshtala
+Mainpuri
+Malappuram
+Malegaon
+Malerkotla
+Mandoli
+Mandsaur
+Mandya
+Mangalagiri
+Mangalore
+Mango
+Mathura
+Maunath Bhanjan
+Medinipur
+Meerut
+Mira Bhayandar
+Miryalaguda
+Mirzapur-cum-Vindhyachal
+Modinagar
+Moga
+Moradabad
+Morena
+Morvi
+Motihari
+Mughalsarai
+Muktsar
+Munger
+Murwara (Katni)
+Mustafabad
+Muzaffarnagar
+Muzaffarpur
+Mysore
+Nabadwip
+Nadiad
+Nagaon
+Nagapattinam
+Nagaur
+Nagda
+Nagercoil
+Nagpur
+Naihati
+Nalgonda
+Nanded Waghala
+Nandurbar
+Nandyal
+Nangloi Jat
+Narasaraopet
+Nashik
+Navi Mumbai (New Bombay)
+Navi Mumbai Panvel Raigad
+Navsari
+Neemuch
+Nellore
+New Delhi Municipal Council (NDMC)
+Neyveli
+Nizamabad
+Noida
+North Barrackpur
+North Dum Dum
+Ongole
+Orai
+Osmanabad
+Ozhukarai
+Palakkad
+Palanpur
+Pali
+Pallavaram
+Palwal
+Panchkula
+Panihati
+Panipat
+Panvel
+Parbhani
+Patan
+Pathankot
+Patiala
+Patna
+Pilibhit
+Pimpri Chinchwad
+Pithampur
+Porbandar
+Port Blair
+Proddatur
+Puducherry
+Pudukkottai
+Pune
+Puri
+Purnia
+Puruliya
+Rae Bareli
+Raichur
+Raiganj
+Raigarh
+Raipur
+Rajahmundry
+Rajapalayam
+Rajarhat Gopalpur
+Rajkot
+Rajnandgaon
+Rajpur Sonarpur
+Ramagundam
+Rampur
+Ranchi
+Ranibennur
+Raniganj
+Ratlam
+Raurkela Industrial Township
+Raurkela Town
+Rewa
+Rewari
+Rishra
+Robertson Pet
+Rohtak
+Roorkee
+Rudrapur
+S.A.S. Nagar
+Sagar
+Saharanpur
+Saharsa
+Salem
+Sambalpur
+Sambhal
+Sangli-Miraj Kupwad
+Santipur
+Sasaram
+Satara
+Satna
+Sawai Madhopur
+Secunderabad
+Sehore
+Seoni
+Serampore
+Shahjahanpur
+Shamli
+Shikohabad
+Shillong
+Shimla
+Shimoga
+Shivpuri
+Sikar
+Silchar
+Siliguri
+Singrauli
+Sirsa
+Sitapur
+Siwan
+Solapur
+Sonipat
+South Dum Dum
+Srikakulam
+Srinagar
+Sujangarh
+Sultan Pur Majra
+Sultanpur
+Surat
+Surendranagar Dudhrej
+Suryapet
+Tadepalligudem
+Tadpatri
+Tambaram
+Tenali
+Thane
+Thanesar
+Thanjavur
+Thiruvananthapuram
+Thoothukkudi
+Thrissur
+Tinsukia
+Tiruchirappalli
+Tirunelveli
+Tirupati
+Tiruppur
+Tiruvannamalai
+Tiruvottiyur
+Titagarh
+Tonk
+Tumkur
+Udaipur
+Udgir
+Udupi
+Ujjain
+Ulhasnagar
+Uluberia
+Unnao
+Uttarpara Kotrung
+Vadodara
+Valsad
+Vapi
+Varanasi
+Vasai-Virar City
+Vellore
+Veraval
+Vidisha
+Vijayawada
+Vizianagaram
+Warangal
+Wardha
+Yamunanagar
+Yavatmal

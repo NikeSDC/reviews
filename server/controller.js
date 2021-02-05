@@ -1,10 +1,11 @@
-const models = require('../database/models.js');
+// const models = require('../database/models.js');
+const models = require('../database/modelsPsql.js');
 
 const controller = {
   get: (req, res) => {
     models.getReviews()
       .then((results) => {
-        res.status(200).send(results);
+        res.status(200).send(results.rows);
       })
       .catch((err) => {
         res.status(400).send(err);
@@ -13,7 +14,7 @@ const controller = {
   getUser: (req, res) => {
     models.getUser(req.body)
       .then((results) => {
-        res.status(200).send(results);
+        res.status(200).send(results.rows);
       })
       .catch((err) => {
         res.status(400).send(err);
@@ -22,7 +23,7 @@ const controller = {
   getRecent: (req, res) => {
     models.getRecent()
       .then((results) => {
-        res.status(200).send(results);
+        res.status(200).send(results.rows);
       })
       .catch((err) => {
         res.status(400).send(err);
@@ -31,7 +32,7 @@ const controller = {
   getRecent10: (req, res) => {
     models.getRecent10()
       .then((results) => {
-        res.status(200).send(results);
+        res.status(200).send(results.rows);
       })
       .catch((err) => {
         res.status(400).send(err);

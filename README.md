@@ -27,3 +27,7 @@ router.use(service3.api6, createProxyMiddleware({target: service3.url, changeOri
 router.use(service3.api7, createProxyMiddleware({target: service3.url, changeOrigin: true }));
 router.use(service3.api8, createProxyMiddleware({target: service3.url, changeOrigin: true }));
 
+# DB setup: 
+-install postgres
+-run 'npm run seed' to create the test.csv file => beware, that's 10M entries being created at once with a fair amount of processing under the hood. The csv creator script uses the contents from the seedSript folder to generate some random reviews.
+-the database seeding will have to be done separately, but you can use the commands found in seedScripts/scripts/dbSeeder.js. do not attempt to run these commands from node, run them from postgresql's cli.
