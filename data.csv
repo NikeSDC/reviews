@@ -1,0 +1,14 @@
+min,med,max
+0.8,2.89,154.17
+
+average response time per requests served
+avg
+6.34,579
+255.88,919,
+843.59,985
+
+import plotext as plt
+y = [6.34, 3.66, 21.17, 255.88, 385.54, 843.59, 834.81]
+x = [579, 262, 953, 919, 964, 985, 925]
+plt.plot(y,x)
+plt.show()
