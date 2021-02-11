@@ -3,6 +3,11 @@ FROM '/home/antoine/Documents/HR/Week9SDC/Reviews---Dubeayi/test.csv'
 DELIMITER ','
 CSV HEADER;
 
+COPY reviews(username, country, city, comfort, durability, offenseStyle, defenseStyle, overallRating, playArea, review, reviewTitle, size, state, upvote, downvote)
+FROM '/home/ubuntu/test.csv'
+DELIMITER ','
+CSV HEADER;
+
 
 create table reviews(
   id serial primary key,
@@ -22,3 +27,4 @@ create table reviews(
   upvote int,
   downvote int
 );
+

@@ -1,19 +1,11 @@
 const express = require('express');
-// var compression = require('compression')
-// const mollify = require('mollify');
-
-// require('newrelic');
 
 
 const app = express();
-// app.use(compression())
+
 
 const PORT = 3003;
-// app.use(mollify({
-  // dir: __dirname,
-  // is: true // default
-// }));
-// const morgan = require('morgan');
+
 const bodyParser = require('body-parser');
 const db = require('../database');
 const router = require('./router.js');
